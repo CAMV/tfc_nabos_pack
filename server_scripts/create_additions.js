@@ -17,7 +17,7 @@ ServerEvents.recipes(event  => {
     ' B ', 
     ' C '  
   ], {
-    A: '#forge:glass', 
+    A: '#tfc:lamp_glass', 
     B: 'createaddition:iron_wire', 
     C: 'createaddition:connector' 
   })

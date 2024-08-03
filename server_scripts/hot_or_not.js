@@ -21,6 +21,7 @@ ServerEvents.recipes(event  => {
         'black_steel',
         'red_steel',
         'blue_steel',
+        'cast_iron'
     ]
 
     tong_metals.forEach((m) => {

@@ -51,9 +51,12 @@ ServerEvents.recipes(event  => {
         let w = wood[1]
         let m = wood[0]
     
+        if (m =='tfc')
+            m = 'firmalife'
+        
         event.remove({ id: `${m}:crafting/wood/${w}_barrel_press`})
     
-        event.shaped('tfcambiental:insulated_leather_hat', [
+        event.shaped(`${m}:wood/barrel_press/${w}`, [
             ' A ', 
             ' B ', 
             'CDC'  
