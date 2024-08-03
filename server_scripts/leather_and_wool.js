@@ -1,7 +1,6 @@
 // priority: 0
 
 ServerEvents.recipes(event  => {
-
     
     let rolling = (input, output, output_amount) =>
         {
@@ -91,4 +90,54 @@ ServerEvents.recipes(event  => {
         ).id(`kubejs:pineapple_yarn_manual_only`)
 
     rolling('firmalife:pineapple_fiber', '8x firmalife:pineapple_yarn', 1)
+
+    event.remove({ id: 'firmalife:crafting/pineapple_fiber' })
+
+    event.custom({
+        type : "tfc:damage_inputs_shapeless_crafting",
+        recipe: {
+          type: "minecraft:crafting_shapeless",
+          ingredients: [
+            {
+              type: "tfc:not_rotten",
+              ingredient: {
+                type: "tfc:has_trait",
+                trait: "firmalife:dried",
+                ingredient: {
+                  item: "firmalife:food/pineapple"
+                }
+              }
+            },
+            {
+              tag: "tfc:knives"
+            }
+          ],
+          result: {
+            item: "firmalife:pineapple_fiber"
+          }
+        }
+    }).id(`kubejs:pineapple_fiber_manual_only`)
+
+    event.custom({
+        type: "create:cutting",
+        ingredients: [
+            {
+                type: "tfc:not_rotten",
+                ingredient: {
+                  type: "tfc:has_trait",
+                  trait: "firmalife:dried",
+                  ingredient: {
+                    item: "firmalife:food/pineapple"
+                  }
+                }
+              }
+        ],
+        processingTime: 50,
+        results: [
+          {
+            item: "firmalife:pineapple_fiber"
+          }
+        ]
+    })
+
 })

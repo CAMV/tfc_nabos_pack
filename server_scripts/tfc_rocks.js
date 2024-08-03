@@ -43,7 +43,75 @@ ServerEvents.recipes(event  => {
         event.remove({ id: `tfc:crafting/sandstone/${c}_cut` })
 
         event.remove({ id: `rnr:crafting/flagstone/${c}_sandstone` })
-        event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`4x rnr:flagstone/${c}_sandstone`,[`tfc:cut_sandstone/${c}`, '#tfc:chisels'])).id(`kubejs:crafting/flagstone/${c}_sandstone_manual_only`)
+
+        event.custom({
+            type: "lychee:block_clicking",
+            post: [
+            {
+                type: "damage_item"
+            },
+            {
+              type: "place",
+              contextual: [
+              {
+                  "type": "chance",
+                  "chance": 0.9
+              }
+              ],
+              block: "air"
+          },
+            {
+                type: "drop_item",
+                contextual: [
+                {
+                    type: "chance",
+                    chance: 0.8
+                }
+                ],
+                item: `rnr:flagstone/${c}_sandstone`,
+                count: 1
+            },
+            {
+                type: "drop_item",
+                contextual: [
+                {
+                    type: "chance",
+                    chance: 0.8
+                }
+                ],
+                item: `rnr:flagstone/${c}_sandstone`,
+                count: 1
+            },
+            {
+              type: "drop_item",
+              contextual: [
+              {
+                  type: "chance",
+                  chance: 0.8
+              }
+              ],
+              item: `rnr:flagstone/${c}_sandstone`,
+              count: 1
+          },
+          {
+              type: "drop_item",
+              contextual: [
+              {
+                  type: "chance",
+                  chance: 0.8
+              }
+              ],
+              item: `rnr:flagstone/${c}_sandstone`,
+              count: 1
+          },
+            ],
+              item_in: {
+              tag: "tfc:chisels"
+            },
+              block_in: `tfc:cut_sandstone/${c}`
+        })
+
+        // event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`4x rnr:flagstone/${c}_sandstone`,[`tfc:cut_sandstone/${c}`, '#tfc:chisels'])).id(`kubejs:crafting/flagstone/${c}_sandstone_manual_only`)
 
         event.custom({
             type: "create:deploying",
@@ -108,7 +176,76 @@ ServerEvents.recipes(event  => {
         event.recipes.create.pressing(`tfc:rock/cracked_bricks/${r}`, `tfc:rock/bricks/${r}`)
 
         event.remove({ id: `rnr:crafting/flagstone/${r}` })
-        event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`4x rnr:flagstone/${r}`,[`tfc:rock/smooth/${r}`, '#tfc:chisels'])).id(`kubejs:crafting/flagstone/${r}_manual_only`)
+
+        event.custom({
+            type: "lychee:block_clicking",
+            post: [
+            {
+                type: "damage_item"
+            },
+            {
+              type: "place",
+              contextual: [
+              {
+                  "type": "chance",
+                  "chance": 0.9
+              }
+              ],
+              block: "air"
+          },
+            {
+                type: "drop_item",
+                contextual: [
+                {
+                    type: "chance",
+                    chance: 0.8
+                }
+                ],
+                item: `rnr:flagstone/${r}`,
+                count: 1
+            },
+            {
+                type: "drop_item",
+                contextual: [
+                {
+                    type: "chance",
+                    chance: 0.8
+                }
+                ],
+                item: `rnr:flagstone/${r}`,
+                count: 1
+            },
+            {
+              type: "drop_item",
+              contextual: [
+              {
+                  type: "chance",
+                  chance: 0.8
+              }
+              ],
+              item: `rnr:flagstone/${r}`,
+              count: 1
+          },
+          {
+              type: "drop_item",
+              contextual: [
+              {
+                  type: "chance",
+                  chance: 0.8
+              }
+              ],
+              item: `rnr:flagstone/${r}`,
+              count: 1
+          },
+            ],
+              item_in: {
+              tag: "tfc:chisels"
+            },
+              block_in: `tfc:rock/smooth/${r}`
+        })
+
+
+        // event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`4x rnr:flagstone/${r}`,[`tfc:rock/smooth/${r}`, '#tfc:chisels'])).id(`kubejs:crafting/flagstone/${r}_manual_only`)
         
 
         // e.recipes.create.deploying(['diamond', 'emerald'], ['coal_block', 'sand']).keepHeldItem()

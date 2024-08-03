@@ -143,5 +143,7 @@ ServerEvents.recipes(event  => {
     event.remove({output: `minecraft:shulker_shell`})
 
     event.remove({id: `minecraft:gold_block`})
+    event.remove({id: `minecraft:mossy_stone_brick`})
+
 
 })

@@ -69,6 +69,7 @@ ServerEvents.recipes(event  => {
         'black_steel',
         'red_steel',
         'blue_steel',
+        'nickel'
     ]
 
     const weak_steels = [
