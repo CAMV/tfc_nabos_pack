@@ -41,7 +41,7 @@ ServerEvents.recipes(event  => {
     all_ores.forEach((ore) => 
         {
             let n_ore = `${ore.name}`;
-            if (ore.name ==  'copper' || ore.name == 'gold')
+            if (ore.name ==  'copper' || ore.name == 'gold' || ore.name == 'silver')
                 n_ore = `native_${ore.name}`
             if (ore.metal) {
                 event.remove({ id: `woodencog:mixing/nugget_rich_to_liquid_${n_ore}` })

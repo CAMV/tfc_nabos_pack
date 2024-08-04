@@ -4,74 +4,26 @@
 ServerEvents.recipes(event  => {
 
     const metals = [
-        'bismuth', 
-        'bismuth_bronze', 
-        'black_bronze',
-        'bronze',
-        'brass',
-        'copper',
-        'gold', 
-        'rose_gold', 
-        'silver',
-        'tin',
-        'zinc',
-        'sterling_silver'
-    ]
-
-    const lamp_metals = [
-        'bismuth_bronze', 
-        'black_bronze',
-        'bronze',
-        'copper'
-
-    ]
-
-    const bars_metals = [
-        'bismuth_bronze', 
-        'black_bronze',
-        'bronze',
-        'brass',
-        'copper',
-    ]
-
-    const chain_metals = [
-        'bismuth_bronze', 
-        'black_bronze',
-        'bronze',
-        'copper',
-    ]
-
-    const tools_metals = [
-        'bismuth_bronze', 
-        'black_bronze',
-        'bronze',
-        'copper',
-    ]
-
-    const wire_metals = [
-        'copper',
-        'gold',
-    ]
-
-    const magnifying_glass_metals = [
-        'bismuth', 
-        'brass',
-        'gold', 
-        'rose_gold', 
-        'silver',
-        'tin',
-        'sterling_silver'
-    ]
-
-    const steels = [
-        {name: 'wrought_iron', hasTools: true, modName: "tfc"},
-        {name: 'steel', hasTools: true, modName: "tfc"},
-        {name: 'black_steel', hasTools: true, modName: "tfc"},
-        {name: 'red_steel', hasTools: true, modName: "tfc"},
-        {name: 'blue_steel', hasTools: true, modName: "tfc"},
-        {name: 'nickel', hasTools: false, modName: "tfc"},
-        {name: 'stainless_steel', hasTools: false, modName: "firmalife"},
-        {name: 'chromium', hasTools: false, modName: "firmalife"}
+        {name: 'wrought_iron',      hasTools: true, modName: "tfc", hasbars: true, hasWire: true, hasMagnifyingGlass: false, heat: 'superheated'},
+        {name: 'steel',             hasTools: true, modName: "tfc", hasbars: true,  hasWire: false, hasMagnifyingGlass: false, heat: 'superheated'},
+        {name: 'black_steel',       hasTools: true, modName: "tfc", hasbars: true,  hasWire: false, hasMagnifyingGlass: false, heat: 'superheated'},
+        {name: 'red_steel',         hasTools: true, modName: "tfc", hasbars: true,  hasWire: false, hasMagnifyingGlass: false, heat: 'superheated'},
+        {name: 'blue_steel',        hasTools: true, modName: "tfc", hasbars: true,  hasWire: false, hasMagnifyingGlass: false, heat: 'superheated'},
+        {name: 'nickel',            hasTools: false, modName: "tfc", hasbars: false, hasWire: false, hasMagnifyingGlass: false, heat: 'superheated'},
+        {name: 'stainless_steel',   hasTools: false, modName: "firmalife", hasbars: false, hasWire: false, hasMagnifyingGlass: false, heat: 'superheated'},
+        {name: 'chromium',          hasTools: false, modName: "firmalife", hasbars: false, hasWire: false, hasMagnifyingGlass: false, heat: 'superheated'},
+        {name: 'bismuth',           hasTools: false, modName: "tfc", hasbars: false, hasWire: false, hasMagnifyingGlass: true, heat: 'heated'},
+        {name: 'bismuth_bronze',    hasTools: true, modName: "tfc", hasbars: true,  hasWire: false, hasMagnifyingGlass: false, heat: 'heated'},
+        {name: 'black_bronze',      hasTools: true, modName: "tfc", hasbars: true,  hasWire: false, hasMagnifyingGlass: false, heat: 'heated'},
+        {name: 'bronze',            hasTools: true, modName: "tfc", hasbars: true,  hasWire: false, hasMagnifyingGlass: false, heat: 'heated'},
+        {name: 'brass',             hasTools: false, modName: "tfc", hasbars: true,  hasWire: false, hasMagnifyingGlass: true, heat: 'heated'},
+        {name: 'copper',            hasTools: true, modName: "tfc", hasbars: true,  hasWire: true, hasMagnifyingGlass: false, heat: 'heated'},
+        {name: 'gold',              hasTools: false, modName: "tfc", hasbars: false, hasWire: true, hasMagnifyingGlass: true, heat: 'heated'},
+        {name: 'rose_gold',         hasTools: false, modName: "tfc", hasbars: false, hasWire: false, hasMagnifyingGlass: true, heat: 'heated'},
+        {name: 'silver',            hasTools: false, modName: "tfc", hasbars: false, hasWire: false, hasMagnifyingGlass: true, heat: 'heated'},
+        {name: 'tin',               hasTools: false, modName: "tfc", hasbars: false, hasWire: false, hasMagnifyingGlass: true, heat: 'heated'},
+        {name: 'zinc',              hasTools: false, modName: "tfc", hasbars: false, hasWire: false, hasMagnifyingGlass: false, heat: 'heated'},
+        {name: 'sterling_silver',   hasTools: false, modName: "tfc", hasbars: false, hasWire: false, hasMagnifyingGlass: true, heat: 'heated'}
     ]
 
     const weak_steels = [
@@ -103,79 +55,6 @@ ServerEvents.recipes(event  => {
             })
         }
 
-    metals.forEach((metal) => 
-        {
-            smelting(`tfc:metal/sheet/${metal}`, `tfc:metal/${metal}`, 200, 'heated')
-            smelting(`tfc:metal/double_sheet/${metal}`, `tfc:metal/${metal}`, 400, 'heated')
-            smelting(`tfc:metal/ingot/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/double_ingot/${metal}`, `tfc:metal/${metal}`, 200, 'heated')
-            smelting(`tfchotornot:tongs/${metal}`, `tfc:metal/${metal}`, 200, 'heated')
-            smelting(`tfchotornot:tong_part/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/rod/${metal}`, `tfc:metal/${metal}`, 50, 'heated')
-        })
-
-    lamp_metals.forEach((metal) => 
-        {
-            smelting(`tfc:metal/lamp/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/unfinished_lamp/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-
-        })
-
-        
-    magnifying_glass_metals.forEach((metal) => 
-        {
-            smelting(`artisanal:metal/magnifying_glass_frame/${metal}`, `tfc:metal/${metal}`, 50, 'heated')
-            smelting(`artisanal:metal/magnifying_glass/${metal}`, `tfc:metal/${metal}`, 50, 'heated')
-        })
-
-    bars_metals.forEach((metal) => 
-        {
-            if (metal == 'brass')
-            {
-                smelting(`create:${metal}_bars`, `tfc:metal/${metal}`, 25, 'heated')
-            }
-            else
-            {
-                smelting(`tfc:metal/bars/${metal}`, `tfc:metal/${metal}`, 25, 'heated')
-            }
-        })
-
-    chain_metals.forEach((metal) => 
-        {
-            smelting(`tfc:metal/chain/${metal}`, `tfc:metal/${metal}`, 6, 'heated')
-        })
-
-    tools_metals.forEach((metal) => 
-        {
-            smelting(`rnr:metal/mattock_head/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/pickaxe_head/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/propick_head/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/axe_head/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/shovel_head/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/hoe_head/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/chisel_head/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/hammer_head/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/javelin_head/${metal}`, `tfc:metal/${metal}`, 100, 'heated')
-            smelting(`tfc:metal/mace_head/${metal}`, `tfc:metal/${metal}`, 200, 'heated')
-            smelting(`tfc:metal/sword_blade/${metal}`, `tfc:metal/${metal}`, 200, 'heated')
-            smelting(`tfc:metal/fish_hook/${metal}`, `tfc:metal/${metal}`, 200, 'heated')
-            smelting(`artisanal:metal/circle_blade/${metal}`, `tfc:metal/${metal}`, 50, 'heated')
-            smelting(`tfc:metal/tuyere/${metal}`, `tfc:metal/${metal}`, 200, 'heated')
-            smelting(`tfc:metal/trapdoor/${metal}`, `tfc:metal/${metal}`, 200, 'heated')
-
-            smelting(`tfc:metal/unfinished_helmet/${metal}`, `tfc:metal/${metal}`, 400, 'heated')
-            smelting(`tfc:metal/unfinished_chestplate/${metal}`, `tfc:metal/${metal}`, 400, 'heated')
-            smelting(`tfc:metal/unfinished_greaves/${metal}`, `tfc:metal/${metal}`, 400, 'heated')
-            smelting(`tfc:metal/unfinished_boots/${metal}`, `tfc:metal/${metal}`, 200, 'heated')
-        })
-
-
-    wire_metals.forEach((metal) => 
-        {
-            smelting(`createaddition:${metal}_wire`, `tfc:metal/${metal}`, 25, 'heated')
-        })
-
-
     event.remove({ id: `woodencog:mixing/ingot_to_liquid_steel` })
     event.remove({ id: `woodencog:mixing/ingot_to_liquid_black_steel` })
     event.remove({ id: `woodencog:mixing/ingot_to_liquid_red_steel` })
@@ -183,44 +62,70 @@ ServerEvents.recipes(event  => {
 
     smelting(`tfc:wrought_iron_grill`, `tfc:metal/cast_iron`, 400, 'superheated')
 
-    steels.forEach((metal) =>
+    metals.forEach((metal) =>
     {
         let cast = metal.name
         if (metal.name == 'wrought_iron')
             cast = 'cast_iron'
 
-        smelting(`${metal.modName}:metal/ingot/${metal.name}`, `${metal.modName}:metal/${cast}`, 100, 'superheated')
-        smelting(`${metal.modName}:metal/double_ingot/${metal.name}`, `${metal.modName}:metal/${cast}`, 200, 'superheated')
-        smelting(`${metal.modName}:metal/sheet/${metal.name}`, `${metal.modName}:metal/${cast}`, 200, 'superheated')
-        smelting(`${metal.modName}:metal/double_sheet/${metal.name}`, `${metal.modName}:metal/${cast}`, 400, 'superheated')
-        smelting(`${metal.modName}:metal/sheet/${metal.name}`, `${metal.modName}:metal/${cast}`, 200, 'superheated')
-        smelting(`${metal.modName}:metal/rod/${metal.name}`, `${metal.modName}:metal/${cast}`, 50, 'superheated')
+        smelting(`${metal.modName}:metal/ingot/${metal.name}`, `${metal.modName}:metal/${cast}`, 100, metal.heat)
+        smelting(`${metal.modName}:metal/double_ingot/${metal.name}`, `${metal.modName}:metal/${cast}`, 200, metal.heat)
+        smelting(`${metal.modName}:metal/sheet/${metal.name}`, `${metal.modName}:metal/${cast}`, 200, metal.heat)
+        smelting(`${metal.modName}:metal/double_sheet/${metal.name}`, `${metal.modName}:metal/${cast}`, 400, metal.heat)
+        smelting(`${metal.modName}:metal/rod/${metal.name}`, `${metal.modName}:metal/${cast}`, 50, metal.heat)
         
+        if (metal.hasMagnifyingGlass) {
+            smelting(`artisanal:metal/magnifying_glass_frame/${metal.name}`, `${metal.modName}:metal/${cast}`, 50, metal.heat)
+            smelting(`artisanal:metal/magnifying_glass/${metal.name}`, `${metal.modName}:metal/${cast}`, 50, metal.heat)
+        }
+
+        if (metal.hasbars)
+        {
+            if (metal.name == 'brass')
+            {
+                smelting(`create:${metal.name}_bars`, `${metal.modName}:metal/${cast}`, 25, metal.heat)
+            }
+            else
+            {
+                smelting(`tfc:metal/bars/${metal.name}`, `${metal.modName}:metal/${cast}`, 25, metal.heat)
+            }
+        }
+
+        if (metal.hasWire) {
+            if (metal.name = 'wrought_iron') {
+                smelting(`createaddition:iron_wire`, `${metal.modName}:metal/${cast}`, 25, metal.heat)
+            } else {
+                smelting(`createaddition:${metal.name}_wire`, `${metal.modName}:metal/${cast}`, 25, metal.heat)
+            }
+        }
+
         if (metal.hasTools){
-            smelting(`tfc:metal/bars/${metal.name}`, `tfc:metal/${cast}`, 25, 'superheated')
-            smelting(`tfc:metal/chain/${metal.name}`, `tfc:metal/${cast}`, 6, 'superheated')
-            smelting(`tfc:metal/anvil/${metal.name}`, `tfc:metal/${cast}`, 1400, 'superheated')
+            smelting(`tfc:metal/lamp/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
+            smelting(`tfc:metal/unfinished_lamp/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
 
-            smelting(`rnr:metal/mattock_head/${metal.name}`, `tfc:metal/${cast}`, 100, 'superheated')
-            smelting(`tfc:metal/pickaxe_head/${metal.name}`, `tfc:metal/${cast}`, 100, 'superheated')
-            smelting(`tfc:metal/propick_head/${metal.name}`, `tfc:metal/${cast}`, 100, 'superheated')
-            smelting(`tfc:metal/axe_head/${metal.name}`, `tfc:metal/${cast}`, 100, 'superheated')
-            smelting(`tfc:metal/shovel_head/${metal.name}`, `tfc:metal/${cast}`, 100, 'superheated')
-            smelting(`tfc:metal/hoe_head/${metal.name}`, `tfc:metal/${cast}`, 100, 'superheated')
-            smelting(`tfc:metal/chisel_head/${metal.name}`, `tfc:metal/${cast}`, 100, 'superheated')
-            smelting(`tfc:metal/hammer_head/${metal.name}`, `tfc:metal/${cast}`, 100, 'superheated')
-            smelting(`tfc:metal/javelin_head/${metal.name}`, `tfc:metal/${cast}`, 100, 'superheated')
-            smelting(`tfc:metal/mace_head/${metal.name}`, `tfc:metal/${cast}`, 200, 'superheated')
-            smelting(`tfc:metal/sword_blade/${metal.name}`, `tfc:metal/${cast}`, 200, 'superheated')
-            smelting(`tfc:metal/fish_hook/${metal.name}`, `tfc:metal/${cast}`, 200, 'superheated')
-            smelting(`artisanal:metal/circle_blade/${metal.name}`, `tfc:metal/${cast}`, 50, 'superheated')
-            smelting(`tfc:metal/tuyere/${metal.name}`, `tfc:metal/${cast}`, 200, 'superheated')
-            smelting(`tfc:metal/trapdoor/${metal.name}`, `tfc:metal/${cast}`, 200, 'superheated')
+            smelting(`tfc:metal/chain/${metal.name}`, `tfc:metal/${cast}`, 6, metal.heat)
+            smelting(`tfc:metal/anvil/${metal.name}`, `tfc:metal/${cast}`, 1400, metal.heat)
 
-            smelting(`tfc:metal/unfinished_helmet/${metal.name}`, `tfc:metal/${cast}`, 400, 'superheated')
-            smelting(`tfc:metal/unfinished_chestplate/${metal.name}`, `tfc:metal/${cast}`, 400, 'superheated')
-            smelting(`tfc:metal/unfinished_greaves/${metal.name}`, `tfc:metal/${cast}`, 400, 'superheated')
-            smelting(`tfc:metal/unfinished_boots/${metal.name}`, `tfc:metal/${cast}`, 200, 'superheated')
+            smelting(`rnr:metal/mattock_head/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
+            smelting(`tfc:metal/pickaxe_head/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
+            smelting(`tfc:metal/propick_head/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
+            smelting(`tfc:metal/axe_head/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
+            smelting(`tfc:metal/shovel_head/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
+            smelting(`tfc:metal/hoe_head/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
+            smelting(`tfc:metal/chisel_head/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
+            smelting(`tfc:metal/hammer_head/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
+            smelting(`tfc:metal/javelin_head/${metal.name}`, `tfc:metal/${cast}`, 100, metal.heat)
+            smelting(`tfc:metal/mace_head/${metal.name}`, `tfc:metal/${cast}`, 200, metal.heat)
+            smelting(`tfc:metal/sword_blade/${metal.name}`, `tfc:metal/${cast}`, 200, metal.heat)
+            smelting(`tfc:metal/fish_hook/${metal.name}`, `tfc:metal/${cast}`, 200, metal.heat)
+            smelting(`artisanal:metal/circle_blade/${metal.name}`, `tfc:metal/${cast}`, 50, metal.heat)
+            smelting(`tfc:metal/tuyere/${metal.name}`, `tfc:metal/${cast}`, 200, metal.heat)
+            smelting(`tfc:metal/trapdoor/${metal.name}`, `tfc:metal/${cast}`, 200, metal.heat)
+
+            smelting(`tfc:metal/unfinished_helmet/${metal.name}`, `tfc:metal/${cast}`, 400, metal.heat)
+            smelting(`tfc:metal/unfinished_chestplate/${metal.name}`, `tfc:metal/${cast}`, 400, metal.heat)
+            smelting(`tfc:metal/unfinished_greaves/${metal.name}`, `tfc:metal/${cast}`, 400, metal.heat)
+            smelting(`tfc:metal/unfinished_boots/${metal.name}`, `tfc:metal/${cast}`, 200, metal.heat)
         }
     })
 
@@ -228,5 +133,11 @@ ServerEvents.recipes(event  => {
         event.remove({ id: `woodencog:mixing/ingot_to_liquid_${metal}` })
         smelting(`tfc:metal/ingot/${metal}`, `tfc:metal/${metal}`, 100, 'superheated')
     })
+
+    smelting(`createaddition:electrum_rod`, `kubejs:electrum`, 50, 'heated')
+    smelting(`createaddition:electrum_ingot`, `kubejs:electrum`, 100, 'heated')
+    smelting(`createaddition:electrum_sheet`, `kubejs:electrum`, 200, 'heated')
+    smelting(`createaddition:electrum_wire`, `kubejs:electrum`, 25, 'heated')
+    smelting(`kubejs:electrum_double_ingot`, `kubejs:electrum`, 200, 'heated')
 
 })
