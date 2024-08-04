@@ -36,22 +36,40 @@ ServerEvents.recipes(event  => {
           type: "and",
           contextual : [
             {
-              type: "not",
-              contextual: {
-                type: "execute",
-                command: "execute if block ~ ~-1 ~ #minecraft:logs",
-              }
+              type: "execute",
+              command: "execute unless block ~ ~-1 ~ #minecraft:logs",
             },
             {
-              type: "not",
-              contextual: {
-                type: "execute",
-                command: "execute if block ~ ~1 ~ #minecraft:logs",
-              }
+              type: "execute",
+              command: "execute unless block ~ ~1 ~ #minecraft:logs",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~1 ~ ~ #minecraft:logs",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~-1 ~ ~ #minecraft:logs",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~ ~ ~1 #minecraft:logs",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~ ~ ~-1 #minecraft:logs",
             },
             {
               type: "execute",
               command: "execute unless block ~ ~-1 ~ minecraft:air",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~ ~-1 ~ #tfc:plants",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~ ~-1 ~ #tfc:snow",
             },
           ]
         }
@@ -96,7 +114,50 @@ ServerEvents.recipes(event  => {
       block_in: block_input,
       item_in: {
         tag: tool_tag
-      },      
+      },
+      contextual: [
+        {
+          type: "and",
+          contextual : [
+            {
+              type: "execute",
+              command: "execute unless block ~ ~-1 ~ #minecraft:logs",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~ ~1 ~ #minecraft:logs",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~1 ~ ~ #minecraft:logs",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~-1 ~ ~ #minecraft:logs",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~ ~ ~1 #minecraft:logs",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~ ~ ~-1 #minecraft:logs",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~ ~-1 ~ minecraft:air",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~ ~-1 ~ #tfc:plants",
+            },
+            {
+              type: "execute",
+              command: "execute unless block ~ ~-1 ~ #tfc:snow",
+            },
+          ]
+        }
+      ],      
       post: [
         {
             type: "damage_item"
@@ -191,6 +252,25 @@ ServerEvents.recipes(event  => {
       item_in: {
         tag: "tfc:saws"
       },
+      contextual: [
+        {
+          type: "and",
+          contextual : [
+            {
+              type: "execute",
+              command: "execute unless block ~ ~-1 ~ minecraft:air",
+            },
+            {
+              type: "execute",
+              command: `execute unless block ~ ~-1 ~ ${w.mod}:wood/vertical_support/${w.name}`,
+            },
+            {
+              type: "execute",
+              command: `execute unless block ~ ~1 ~ ${w.mod}:wood/vertical_support/${w.name}`,
+            },
+          ]
+        }
+      ], 
       post: [
         {
             type: "damage_item"
@@ -337,7 +417,6 @@ ServerEvents.recipes(event  => {
       event.recipes.create.deploying(`4x rnr:wood/shingle/${w.name}`, [`${w.mod}:wood/log/${w.name}`, '#tfc:chisels'])
       event.recipes.create.deploying(`4x rnr:wood/shingle/${w.name}`, [`${w.mod}:wood/wood/${w.name}`, '#tfc:chisels'])
     }
-
   })
 
   event.remove({ id: `tfc:crafting/wood/palm_mosaic` })

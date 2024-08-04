@@ -66,6 +66,8 @@ ServerEvents.recipes(event  => {
     ]
 
     event.remove({ id: `tfcorewashing:rock_powder` })
+    event.remove({ id: `tfcorewashing:rock_powder/hammering` })
+
 
     sand_colors.forEach((c) => {
         event.remove({ id: `tfc:crafting/sandstone/${c}_smooth` })

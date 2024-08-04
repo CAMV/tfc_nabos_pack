@@ -145,5 +145,8 @@ ServerEvents.recipes(event  => {
     event.remove({id: `minecraft:gold_block`})
     event.remove({id: `minecraft:mossy_stone_brick`})
 
+    event.remove({id: `minecraft:crafting_table`})
+
+
 
 })
