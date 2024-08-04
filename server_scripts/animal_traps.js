@@ -12,6 +12,20 @@ ServerEvents.recipes(event  => {
         'turkey',
         'turtle'        
     ]
+
+    event.remove({ id: `animaltraptfc:compat/tfc/small_animal_bait` })
+    event.recipes.tfc.damage_inputs_shapeless_crafting(
+        event.recipes.minecraft.crafting_shapeless(
+            '2x animaltrap:small_animals_bait',
+            ['#forge:vegetables', '#tfc:knives'])
+        ).id(`kubejs:small_animal_bait_manual_only`)
+
+    event.remove({ id: `animaltrap:small_animal_bait` })
+    event.recipes.tfc.damage_inputs_shapeless_crafting(
+        event.recipes.minecraft.crafting_shapeless(
+            'animaltrap:small_animals_bait',
+            ['#forge:seeds', '#tfc:knives'])
+        ).id(`kubejs:single_small_animal_bait_manual_only`)
     
     animals.forEach((a) => {
         event.remove({ id: `animaltraptfc:compat/tfc/carcass_${a}` })

@@ -1,33 +1,12 @@
 
 ServerEvents.recipes(event  => {
   
-  let hammer_flux = (block_input, item_out, out_count) => {
-    event.custom({
-      type: "lychee:block_interacting",
-      block_in: {
-        blocks : [block_input],
-        state: {
-            count: out_count
-        }
-      },
-      item_in: {
-        tag: "tfc:hammer"
-      },
-      post: [
-        {
-            type: "damage_item"
-        },
-        {
-            type: "place",
-            block: "air"
-        },
-        {
-            type: "drop_item",
-            item: item_out,
-            count: out_count * 2
-        }
-      ],
-    })
+  let knife_translation = (output, input, id) => {
+    event.recipes.tfc.damage_inputs_shapeless_crafting(
+        event.recipes.minecraft.crafting_shapeless(
+            output,
+            [input, '#tfc:knives'])
+        ).id(`kubejs:${id}_manual_only`)
   }
 
   let saw_translation = (output, input, id) => {
@@ -86,5 +65,27 @@ ServerEvents.recipes(event  => {
   // hammer_flux('#tfc:fluxstone', 'tfc:powder/flux', 1)
   // hammer_flux('#tfc:fluxstone', 'tfc:powder/flux', 2)
   // hammer_flux('#tfc:fluxstone', 'tfc:powder/flux', 3)
+
+  event.remove({ id: `tfc:crafting/bone_needle` })
+  event.recipes.tfc.damage_inputs_shapeless_crafting(
+      event.recipes.minecraft.crafting_shapeless(
+          'tfc:bone_needle',
+          ['minecraft:bone', '#tfc:knives'])
+      ).id(`kubejs:bone_needle_manual_only`)
+
+  event.remove({ id: `tfc:crafting/papyrus_strips` })
+  event.recipes.tfc.damage_inputs_shapeless_crafting(
+      event.recipes.minecraft.crafting_shapeless(
+          '4x tfc:papyrus_strip',
+          ['tfc:papyrus', '#tfc:knives'])
+      ).id(`kubejs:papyrus_strip_manual_only`)
+    event.recipes.create.cutting('4x tfc:papyrus_strip', 'tfc:papyrus').processingTime(300)
+
+  event.remove({ id: `tfc:crafting/wood/stick_from_twigs` })
+  event.recipes.tfc.damage_inputs_shapeless_crafting(
+      event.recipes.minecraft.crafting_shapeless(
+          'minecraft:stick',
+          ['#tfc:firepit_sticks','#tfc:knives'])
+      ).id(`kubejs:stick_from_twigs_manual_only`)
 
 })

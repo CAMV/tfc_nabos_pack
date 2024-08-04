@@ -2,7 +2,6 @@
 
 ServerEvents.recipes(event  => {
 
-
     let chisel_translation = (output, input) => {
         event.recipes.tfc.damage_inputs_shapeless_crafting(
             event.recipes.minecraft.crafting_shapeless(
@@ -10,6 +9,14 @@ ServerEvents.recipes(event  => {
                 [input, '#tfc:chisels'])
             ).id(`kubejs:${output}_manual_only`)
         event.recipes.create.deploying(`firmalife:${output}`, [input, '#tfc:chisels'])
+    }
+
+    let knife_translation = (output, input, id) => {
+        event.recipes.tfc.damage_inputs_shapeless_crafting(
+            event.recipes.minecraft.crafting_shapeless(
+                output,
+                [input, '#tfc:knives'])
+            ).id(`kubejs:${id}_manual_only`)
     }
 
     event.remove({ id: `firmalife:crafting/barrel_stave` })
@@ -68,19 +75,18 @@ ServerEvents.recipes(event  => {
         ).id(`kubejs:pottery_sherd_manual_only`)
     event.recipes.create.pressing('firmalife:pottery_sherd', `#tfc:fired_vessels`)
 
-    // event.custom({
-    //     type:"createaddition:charging",
-    //     input: {
-    //         item: "kubejs:ungalvanized_engine_piston",
-    //         count: 1
-    //     },
-    //     result: {
-    //         item: "createdieselgenerators:engine_piston",
-    //         count: 1
-    //     },
-    //     energy: 4000,
-    //     maxChargeRate: 100
-    // })
-    
+    event.remove({ id: `firmalife:crafting/bottle_label` })
+    event.recipes.tfc.damage_inputs_shapeless_crafting(
+        event.recipes.minecraft.crafting_shapeless(
+            '16x firmalife:bottle_label',
+            ['minecraft:paper', 'firmalife:beeswax','#tfc:knives'])
+        ).id(`kubejs:bottle_label_manual_only`)
+
+    event.remove({ id: `firmalife:crafting/spoon` })
+    event.recipes.tfc.damage_inputs_shapeless_crafting(
+        event.recipes.minecraft.crafting_shapeless(
+            'firmalife:spoon',
+            ['#tfc:firepit_sticks', '#tfc:lumber','#tfc:knives'])
+        ).id(`kubejs:spoon_manual_only`)
 
 })

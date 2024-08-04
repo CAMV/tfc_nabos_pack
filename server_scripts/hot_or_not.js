@@ -34,12 +34,12 @@ ServerEvents.recipes(event  => {
             ).id(`kubejs:tongs/${m}_manual_only`)
     })
 
-    event.remove({ output: `tfchotornot:tongs/wood` })
+    event.remove({ id: `tfchotornot:crafting/tongs/wood` })
 
     event.recipes.tfc.damage_inputs_shapeless_crafting(
         event.recipes.minecraft.crafting_shapeless(
             `tfchotornot:tongs/wood`,
-            [`2x #tfc:firpit_sticks`, '#tfc:knives'])
+            [`2x #tfc:firepit_sticks`, '#tfc:knives'])
         ).id(`kubejs:tongs/wood_manual_only`)
     
 
