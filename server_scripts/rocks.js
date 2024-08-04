@@ -1,6 +1,36 @@
 
 ServerEvents.recipes(event  => {
 
+
+    let chisel_brick = (block_input, item_out, out_count) => {
+        event.custom({
+          type: "lychee:block_interacting",
+          block_in: {
+            blocks : [block_input],
+            state: {
+                count: out_count
+            }
+          },
+          item_in: {
+            tag: "tfc:chisels"
+          },
+          post: [
+            {
+                type: "damage_item"
+            },
+            {
+                type: "place",
+                block: "air"
+            },
+            {
+                type: "drop_item",
+                item: item_out,
+                count: out_count
+            }
+          ],
+        })
+      }
+
     let sand_colors = 
     [
         'brown',
@@ -141,8 +171,16 @@ ServerEvents.recipes(event  => {
 
         event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`tfcorewashing:rock_powder`,[`tfc:rock/loose/${r}`, '#forge:tools/hammers'])).id(`kubejs:${r}_rock_powder_manual_only`)
 
-        event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`tfc:brick/${r}`,[`tfc:rock/loose/${r}`, '#tfc:chisels'])).id(`kubejs:crafting/brick/${r}_bricks_manual_only`)
-        event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`tfc:brick/${r}`,[`tfc:rock/mossy_loose/${r}`, '#tfc:chisels'])).id(`kubejs:crafting/brick/${r}_bricks_from_mossy_manual_only`)
+        chisel_brick(`tfc:rock/loose/${r}`, `tfc:brick/${r}`, 1)
+        chisel_brick(`tfc:rock/loose/${r}`, `tfc:brick/${r}`, 2)
+        chisel_brick(`tfc:rock/loose/${r}`, `tfc:brick/${r}`, 3)
+
+        chisel_brick(`tfc:rock/mossy_loose/${r}`, `tfc:brick/${r}`, 1)
+        chisel_brick(`tfc:rock/mossy_loose/${r}`, `tfc:brick/${r}`, 2)
+        chisel_brick(`tfc:rock/mossy_loose/${r}`, `tfc:brick/${r}`, 3)
+
+        //event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(,[, '#tfc:chisels'])).id(`kubejs:crafting/brick/${r}_bricks_manual_only`)
+        //event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`tfc:brick/${r}`,[`tfc:rock/mossy_loose/${r}`, '#tfc:chisels'])).id(`kubejs:crafting/brick/${r}_bricks_from_mossy_manual_only`)
        
         event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`tfc:rock/button/${r}`,[`tfc:brick/${r}`, '#tfc:chisels'])).id(`kubejs:crafting/button/${r}_manual_only`)
         event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`tfc:rock/pressure_plate/${r}`,[`2x tfc:brick/${r}`, '#tfc:chisels'])).id(`kubejs:crafting/pressure_plate/${r}_manual_only`)
@@ -243,12 +281,6 @@ ServerEvents.recipes(event  => {
             },
               block_in: `tfc:rock/smooth/${r}`
         })
-
-
-        // event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`4x rnr:flagstone/${r}`,[`tfc:rock/smooth/${r}`, '#tfc:chisels'])).id(`kubejs:crafting/flagstone/${r}_manual_only`)
-        
-
-        // e.recipes.create.deploying(['diamond', 'emerald'], ['coal_block', 'sand']).keepHeldItem()
 
         event.custom({
             type: "create:deploying",
@@ -352,11 +384,6 @@ ServerEvents.recipes(event  => {
             ]
         })
 
-
     })
-
-    // event.recipes.tfc.damage_inputs_shapeless_crafting(event.recipes.minecraft.crafting_shapeless(`4x afc:wood/lumber/${wood}`,[`afc:wood/planks/${wood}`, '#tfc:saws'])).id(`kubejs:crafting/wood/${wood}_lumber_planks_manual_only`)
-
-    
 
 })
