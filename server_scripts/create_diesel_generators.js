@@ -160,7 +160,7 @@ ServerEvents.recipes(event  => {
 
   event.remove({ output: 'createdieselgenerators:oil_barrel' })
   event.shaped('createdieselgenerators:oil_barrel', [
-      ' B', 
+      ' B ', 
       'BAB', 
       ' B '  
     ], {
@@ -171,7 +171,7 @@ ServerEvents.recipes(event  => {
 
   event.remove({ output: 'createdieselgenerators:kelp_handle' })
   event.shaped('createdieselgenerators:kelp_handle', [
-      '  ', 
+      '   ', 
       'BBB', 
       '  A'  
     ], {

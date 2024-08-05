@@ -56,21 +56,22 @@ ServerEvents.recipes(event  => {
                     smelting(`tfcorewashing:pellet_${ore.name}`, `${ore.mod}:metal/${ore.metal}`, 20, ore.heat)
                     smelting(`tfcorewashing:briquet_${ore.name}`, `${ore.mod}:metal/${ore.metal}`, 80, ore.heat)
                 }
+
+                event.remove({  id: `tfcorewashing:ores/${ore.name}/${ore.name}_small_hammer` })
+                event.remove({  id: `tfcorewashing:ores/${ore.name}/${ore.name}_poor_hammer` })
+                event.remove({  id: `tfcorewashing:ores/${ore.name}/${ore.name}_normal_hammer` })
+                event.remove({  id: `tfcorewashing:ores/${ore.name}/${ore.name}_rich_hammer` })
+        
+                event.recipes.tfc.damage_inputs_shapeless_crafting( event.recipes.minecraft.crafting_shapeless( `2x tfcorewashing:rocky_chunks_${ore.name}`,[`${ore.mod}:ore/small_${n_ore}`, '#tfc:hammers'])).id(`kubejs:ores/${ore.name}_small_hammer_manual_only`)
+                event.recipes.tfc.damage_inputs_shapeless_crafting( event.recipes.minecraft.crafting_shapeless( `3x tfcorewashing:rocky_chunks_${ore.name}`,[`${ore.mod}:ore/poor_${n_ore}`, '#tfc:hammers'])).id(`kubejs:ores/${ore.name}_poor_hammer_manual_only`)
+                event.recipes.tfc.damage_inputs_shapeless_crafting( event.recipes.minecraft.crafting_shapeless( `5x tfcorewashing:rocky_chunks_${ore.name}`,[`${ore.mod}:ore/normal_${n_ore}`, '#tfc:hammers'])).id(`kubejs:ores/${ore.name}_normal_hammer_manual_only`)
+                event.recipes.tfc.damage_inputs_shapeless_crafting( event.recipes.minecraft.crafting_shapeless( `7x tfcorewashing:rocky_chunks_${ore.name}`,[`${ore.mod}:ore/rich_${n_ore}`, '#tfc:hammers'])).id(`kubejs:ores/${ore.name}_rich_hammer_manual_only`)
+    
             } else {
                 event.remove({  id: `tfcorewashing:ores/${ore.name}/${ore.name}_hammer` })
                 event.remove({  id: `woodencog:crushing/milling_${ore.name}.json` })
                 event.remove({  id: `woodencog:crushing/crushing_${ore.name}.json` })
                 event.recipes.tfc.damage_inputs_shapeless_crafting( event.recipes.minecraft.crafting_shapeless( `7x tfcorewashing:rocky_chunks_${ore.name}`,[`tfc:ore/${ore.name}`, '#tfc:hammers'])).id(`kubejs:ores/${ore.name}_hammer_manual_only`)
             }
-
-            event.remove({  id: `tfcorewashing:ores/${ore.name}/${ore.name}_small_hammer` })
-            event.remove({  id: `tfcorewashing:ores/${ore.name}/${ore.name}_poor_hammer` })
-            event.remove({  id: `tfcorewashing:ores/${ore.name}/${ore.name}_normal_hammer` })
-            event.remove({  id: `tfcorewashing:ores/${ore.name}/${ore.name}_rich_hammer` })
-    
-            event.recipes.tfc.damage_inputs_shapeless_crafting( event.recipes.minecraft.crafting_shapeless( `2x tfcorewashing:rocky_chunks_${ore.name}`,[`${ore.mod}:ore/small_${n_ore}`, '#tfc:hammers'])).id(`kubejs:ores/${ore.name}_small_hammer_manual_only`)
-            event.recipes.tfc.damage_inputs_shapeless_crafting( event.recipes.minecraft.crafting_shapeless( `3x tfcorewashing:rocky_chunks_${ore.name}`,[`${ore.mod}:ore/poor_${n_ore}`, '#tfc:hammers'])).id(`kubejs:ores/${ore.name}_poor_hammer_manual_only`)
-            event.recipes.tfc.damage_inputs_shapeless_crafting( event.recipes.minecraft.crafting_shapeless( `5x tfcorewashing:rocky_chunks_${ore.name}`,[`${ore.mod}:ore/normal_${n_ore}`, '#tfc:hammers'])).id(`kubejs:ores/${ore.name}_normal_hammer_manual_only`)
-            event.recipes.tfc.damage_inputs_shapeless_crafting( event.recipes.minecraft.crafting_shapeless( `7x tfcorewashing:rocky_chunks_${ore.name}`,[`${ore.mod}:ore/rich_${n_ore}`, '#tfc:hammers'])).id(`kubejs:ores/${ore.name}_rich_hammer_manual_only`)
         })
 })

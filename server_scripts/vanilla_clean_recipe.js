@@ -38,6 +38,11 @@ ServerEvents.recipes(event  => {
     });
 
     event.remove({ id: `minecraft:minecart` })
+    event.remove({ id: `minecraft:hopper_minecart` })
+    event.remove({ id: `minecraft:furnace_minecart` })
+
+    event.recipes.minecraft.crafting_shapeless(`minecraft:hopper_minecart`, ['minecraft:minecart', 'minecraft:hopper']).id(`kubejs:hopper_minecart_manual_only`)
+    event.recipes.create.deploying(`minecraft:hopper_minecart`, ['minecraft:minecart', 'minecraft:hopper'])
 
     let woods = [
         'oak',

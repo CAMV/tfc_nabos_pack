@@ -79,7 +79,7 @@ ServerEvents.recipes(event  => {
             ['tfc:wool', 'tfc:spindle'])
         ).id(`kubejs:wool_yarn_manual_only`)
 
-    rolling('tfc:wool', '8x tfc:wool_yarn', 1)
+    rolling('tfc:wool', 'tfc:wool_yarn', 8)
 
     event.remove({ id: 'firmalife:crafting/pineapple_yarn' })
 
@@ -89,7 +89,7 @@ ServerEvents.recipes(event  => {
             ['firmalife:pineapple_fiber', 'tfc:spindle'])
         ).id(`kubejs:pineapple_yarn_manual_only`)
 
-    rolling('firmalife:pineapple_fiber', '8x firmalife:pineapple_yarn', 1)
+    rolling('firmalife:pineapple_fiber', 'firmalife:pineapple_yarn', 8)
 
     event.remove({ id: 'firmalife:crafting/pineapple_fiber' })
 

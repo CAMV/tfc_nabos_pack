@@ -378,7 +378,7 @@ ServerEvents.recipes(event  => {
     }
 
     event.remove({ id: `${w.mod}:crafting/wood/${w.name}_chest_minecart` })
-    event.recipes.minecraft.crafting_shapeless(`${w.mod}:wood/chest_minecart/${w.name}`, ['minecraft:minecart', `tfc:wood/chest/${w.name}`]).id(`kubejs:crafting/chest_minecart/${w.name}_manual_only`)
+    event.recipes.minecraft.crafting_shapeless(`${w.mod}:wood/chest_minecart/${w.name}`, ['minecraft:minecart', `${w.mod}:wood/chest/${w.name}`]).id(`kubejs:crafting/chest_minecart/${w.name}_manual_only`)
     event.recipes.create.deploying(`${w.mod}:wood/chest_minecart/${w.name}`, ['minecraft:minecart', `${w.mod}:wood/chest/${w.name}`])
 
     if (w.mod == 'beneath')
