@@ -140,4 +140,9 @@ ServerEvents.recipes(event  => {
         ]
     })
 
+    event.recipes.minecraft.crafting_shapeless(
+        `tfc:small_raw_hide`,
+        ['minecraft:rabbit_hide', 'minecraft:rabbit_hide'])
+    .id(`kubejs:rabbit_to_small_hide_manual_only`)
+
 })

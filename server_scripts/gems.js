@@ -32,8 +32,66 @@ ServerEvents.recipes(event  => {
     gems.forEach((gem) => {
 
         event.remove({ output: `tfc:gem/${gem}` })
-        event.recipes.create.sandpaper_polishing(`tfc:gem/${gem}`, `tfc:ore/${gem}`)
-        
+        event.recipes.create.sandpaper_polishing(`tfc:gem/${gem}`, `tfc:ore/${gem}`).id(`kubejs:${gem}_polish`)
+
     })
+
+    // {
+    //     type:"createaddition:charging",
+    //     input: {
+    //       item: "kubejs:ungalvanized_engine_piston",
+    //       count: 1
+    //     },
+    //     result: {
+    //       item: "createdieselgenerators:engine_piston",
+    //       count: 1
+    //     },
+    //     energy: 4000,
+    //     maxChargeRate: 100
+    // }
+
+    event.custom(
+        {
+            type: "create:sequenced_assembly",
+            ingredient: {
+              item: "tfc:wood/planks/acacia_slab"
+            },
+            loops: 1,
+            results: [
+              {
+                item: "create:track"
+              }
+            ],
+            sequence: [
+                {
+                    type: "createaddition:charging",
+                    ingredients: [{
+                        item: "create:incomplete_track"
+                    }],
+                    results:[{
+                        item: "create:incomplete_track"
+                    }],
+                    energy: 4000,
+                    maxChargeRate: 100
+                },
+                {
+                    type: "create:pressing",
+                    ingredients: [
+                    {
+                        item: "create:incomplete_track"
+                    }
+                    ],
+                    results: [
+                    {
+                        item: "create:incomplete_track"
+                    }
+                    ]
+                }
+            ],
+            transitionalItem: {
+              item: "create:incomplete_track"
+            }
+          }
+    ).id('kubejs:test_1')
 
 })

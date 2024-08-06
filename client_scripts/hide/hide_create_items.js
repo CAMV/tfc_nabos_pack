@@ -166,6 +166,7 @@ JEIEvents.hideItems( event => {
   event.hide('alekiships:watercraft_frame_angled')
   event.hide('alekiships:watercraft_frame_flat')
 
+  event.hide('create:framed_glass_trapdoor')
 })
 
 JEIEvents.hideFluids ( event => {

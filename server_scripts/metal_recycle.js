@@ -59,6 +59,7 @@ ServerEvents.recipes(event  => {
     event.remove({ id: `woodencog:mixing/ingot_to_liquid_black_steel` })
     event.remove({ id: `woodencog:mixing/ingot_to_liquid_red_steel` })
     event.remove({ id: `woodencog:mixing/ingot_to_liquid_blue_steel` })
+    event.remove({ id: `woodencog:mixing/ingot_to_liquid_nickel` })
 
     smelting(`tfc:wrought_iron_grill`, `tfc:metal/cast_iron`, 400, 'superheated')
 
@@ -127,6 +128,11 @@ ServerEvents.recipes(event  => {
             smelting(`tfc:metal/unfinished_greaves/${metal.name}`, `tfc:metal/${cast}`, 400, metal.heat)
             smelting(`tfc:metal/unfinished_boots/${metal.name}`, `tfc:metal/${cast}`, 200, metal.heat)
         }
+
+        event.remove({ id: `vintageimprovements:pressing/${metal.name}_ingot` })
+        event.remove({ id: `vintageimprovements:rolling/${metal.name}_ingot` })
+        event.remove({ id: `tfc_metal_items:seq_pressing/sheets/${metal.name}` })
+
     })
 
     weak_steels.forEach((metal) =>{

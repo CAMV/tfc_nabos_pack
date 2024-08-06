@@ -81,4 +81,5 @@ ServerEvents.recipes(event  => {
 
   event.remove({ id: 'createaddition:charging/channeling' })
 
+  event.remove({ id: 'createaddition:compacting/biomass_pellet' })
 })

@@ -112,9 +112,14 @@ ServerEvents.recipes(event  => {
     event.custom({
       type: "lychee:block_interacting",
       block_in: block_input,
-      item_in: {
-        tag: tool_tag
-      },
+      item_in: [
+        {
+            tag: "tfc:chisels",
+        },
+        {
+            tag: "tfc:hammers",
+        }
+      ],
       contextual: [
         {
           type: "and",

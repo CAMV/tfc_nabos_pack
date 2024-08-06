@@ -58,4 +58,6 @@ ServerEvents.recipes(event  => {
       event.remove({ output: `create:schematic_and_quill` })
       event.shapeless(`create:schematic_and_quill`, [`create:empty_schematic`, 'artisanal:quill']).id(`kubejs:schematic_and_quill_manual_only`)
 
+      event.remove({ id: `create:mixing/lava_from_cobble` })
+
 })

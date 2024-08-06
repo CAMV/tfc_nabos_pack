@@ -11,9 +11,14 @@ ServerEvents.recipes(event  => {
                 count: out_count
             }
           },
-          item_in: {
-            tag: "tfc:chisels"
-          },
+          item_in: [
+            {
+                tag: "tfc:chisels",
+            },
+            {
+                tag: "tfc:hammers",
+            }
+          ],
           post: [
             {
                 type: "damage_item"
@@ -137,9 +142,14 @@ ServerEvents.recipes(event  => {
               count: 1
           },
             ],
-              item_in: {
-              tag: "tfc:chisels"
-            },
+              item_in: [
+                {
+                    tag: "tfc:chisels",
+                },
+                {
+                    tag: "tfc:hammers",
+                }
+              ],
               block_in: `tfc:cut_sandstone/${c}`
         })
 
@@ -278,9 +288,14 @@ ServerEvents.recipes(event  => {
               count: 1
           },
             ],
-              item_in: {
-              tag: "tfc:chisels"
-            },
+              item_in: [
+                {
+                    tag: "tfc:chisels",
+                },
+                {
+                    tag: "tfc:hammers",
+                }
+              ],
               block_in: `tfc:rock/smooth/${r}`
         })
 
