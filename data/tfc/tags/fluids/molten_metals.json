@@ -1,0 +1,7 @@
+{
+    "replace": false,
+    "values": [
+      "kubejs:electrum",
+      "kubejs:andesite_alloy"
+    ]
+}

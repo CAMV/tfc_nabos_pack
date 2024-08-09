@@ -1,0 +1,8 @@
+{
+  "ingredient": {
+    "item": "createaddition:electrum_rod"
+  },
+  "heat_capacity": 2.381,
+  "forging_temperature": 540,
+  "welding_temperature": 720
+}

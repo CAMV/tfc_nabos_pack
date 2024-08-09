@@ -1,0 +1,31 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+      {
+          "type": "tfc:heatable",
+          "max_temp": 200,
+          "ingredient": {
+              "type": "forge:nbt",
+              "item": "tfc:ceramic/ingot_mold",
+              "nbt": {
+                  "tank": {
+                      "Amount": 100,
+                      "FluidName": "kubejs:andesite_alloy"
+                  }
+              }
+          }
+      },
+      {
+          "tag": "tfc:chisels"
+      }
+  ],
+  "results": [
+      {
+          "item": "create:andesite_alloy"
+      },
+      {
+          "item": "tfc:ceramic/ingot_mold",
+          "chance": 0.75
+      }
+  ]
+}

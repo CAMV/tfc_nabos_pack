@@ -1,0 +1,25 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "create:shaft"
+    },
+    "B": {
+      "item": "tfc:metal/ingot/steel"
+    },
+    "C": {
+      "item": "create_new_age:magnetite_block"
+    }
+  },
+  "pattern": [
+    "C C C",
+    " BBB ",
+    "CBABC",
+    " BBB ",
+    "C C C"
+  ],
+  "result": {
+    "item": "create_new_age:generator_coil"
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "tier": 3,
+    "fluid": "kubejs:andesite_alloy",
+    "melt_temperature": 450,
+    "specific_heat_capacity": 0.00857,
+    "ingots": {
+      "item": "create:andesite_alloy"
+    }
+}

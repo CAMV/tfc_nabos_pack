@@ -1,0 +1,15 @@
+{
+    "tier": 3,
+    "fluid": "kubejs:electrum",
+    "melt_temperature": 900,
+    "specific_heat_capacity": 0.00857,
+    "ingots": {
+      "item": "createaddition:electrum_ingot"
+    },
+    "double_ingots": {
+      "item": "kubejs:electrum_double_ingot"
+    },
+    "sheets": {
+      "item": "createaddition:electrum_sheet"
+    }
+}

@@ -1,0 +1,8 @@
+{
+  "ingredient": {
+    "item": "kubejs:electrum_double_ingot"
+  },
+  "heat_capacity": 5.714,
+  "forging_temperature": 540,
+  "welding_temperature": 720
+}

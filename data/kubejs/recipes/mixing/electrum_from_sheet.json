@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item" : "createaddition:electrum_sheet"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "kubejs:electrum",
+      "amount": 200
+    }
+  ]
+}

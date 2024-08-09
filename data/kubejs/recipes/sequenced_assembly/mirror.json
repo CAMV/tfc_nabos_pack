@@ -1,0 +1,78 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "firmalife:metal/sheet/chromium"
+  },
+  "loops": 2,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_mirror"
+  },
+  "results": [
+    {
+      "item": "kubejs:mirror"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_mirror"
+        },
+        {
+          "item": "firmalife:reinforced_glass"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_mirror"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "firmalife:reinforced_glass"
+        },
+        {
+          "fluid" : "tfc:metal/silver",
+          "amount": 100
+        }
+      ],
+      "results": [
+        {
+          "item": "firmalife:reinforced_glass"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_mirror"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_mirror"
+        }
+      ]
+    },
+    {
+      "type":"vintageimprovements:laser_cutting",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_mirror"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_mirror"
+        }
+      ],
+      "energy": 2000,
+      "maxChargeRate": 50
+    }
+  ]
+}

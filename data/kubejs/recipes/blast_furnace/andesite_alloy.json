@@ -1,0 +1,14 @@
+{
+  "type": "tfc:blast_furnace",
+  "fluid": {
+    "ingredient": "tfc:metal/zinc",
+    "amount": 25
+  },
+  "result": {
+    "fluid": "kubejs:andesite_alloy",
+    "amount": 25
+  },
+  "catalyst": {
+    "tag": "tfc:powders/iron"
+  }
+}

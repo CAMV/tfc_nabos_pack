@@ -140,10 +140,4 @@ ServerEvents.recipes(event  => {
         smelting(`tfc:metal/ingot/${metal}`, `tfc:metal/${metal}`, 100, 'superheated')
     })
 
-    smelting(`createaddition:electrum_rod`, `kubejs:electrum`, 50, 'heated')
-    smelting(`createaddition:electrum_ingot`, `kubejs:electrum`, 100, 'heated')
-    smelting(`createaddition:electrum_sheet`, `kubejs:electrum`, 200, 'heated')
-    smelting(`createaddition:electrum_wire`, `kubejs:electrum`, 25, 'heated')
-    smelting(`kubejs:electrum_double_ingot`, `kubejs:electrum`, 200, 'heated')
-
 })

@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "create_new_age:redstone_magnet"
+  },
+  "loops": 12,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_stator"
+  },
+  "results": [
+    {
+      "item": "create_new_age:layered_magnet"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_stator"
+        },
+        {
+          "item": "kubejs:stainless_steel_spool"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_stator"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_stator"
+        },
+        {
+          "item": "tfc:metal/rod/black_steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_stator"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_stator"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_stator"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "create_new_age:basic_motor"
+    },
+    "B": {
+      "item": "tfc:metal/double_ingot/steel"
+    },
+    "C": {
+      "item": "create_new_age:redstone_magnet"
+    },
+    "D": {
+      "item": "createaddition:large_connector"
+    },
+    "E": {
+      "item": "createaddition:electrum_ingot"
+    }
+  },
+  "pattern": [
+    "CCBBB",
+    "DAEEE",
+    "CCBBB"
+  ],
+  "result": {
+    "item": "create_new_age:advanced_motor"
+  }
+}

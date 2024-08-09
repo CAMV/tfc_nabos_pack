@@ -1,0 +1,62 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:redstone_block"
+  },
+  "loops": 12,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_stator"
+  },
+  "results": [
+    {
+      "item": "create_new_age:magnetite_block"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_stator"
+        },
+        {
+          "item": "createaddition:copper_spool"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_stator"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_stator"
+        },
+        {
+          "item": "tfc:metal/rod/wrought_iron"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_stator"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_stator"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_stator"
+        }
+      ]
+    }
+  ]
+}

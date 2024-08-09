@@ -1,0 +1,27 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "tag": "minecraft:terracotta"
+    },
+    "B": {
+      "item": "create_new_age:heat_pipe"
+    },
+    "C": {
+      "item": "tfc:metal/double_ingot/steel"
+    },
+    "D": {
+      "item": "tfc:ceramic/fire_brick"
+    }
+  },
+  "pattern": [
+    "D D D",
+    "ADADA",
+    "CCBCC",
+    "BBBBB"
+  ],
+  "result": {
+    "item": "create_new_age:heater"
+  }
+}

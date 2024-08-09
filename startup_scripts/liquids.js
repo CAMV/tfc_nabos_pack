@@ -6,7 +6,7 @@ StartupEvents.registry('fluid', e => {
         //sets the texture to thick
         .thickTexture(0x809587) // () conatins the hex code, prefixed by 0x, of the color of the fluid
         .bucketColor(0x809587) //  () conatins the hex code, prefixed by 0x, of the color of the fluid in the bucket, usually the same 
-        .displayName('Andesite Alloy') //in  game name of fluid
+        .displayName('Zinc Alloy') //in  game name of fluid
 })
 
 StartupEvents.registry('fluid', e => {

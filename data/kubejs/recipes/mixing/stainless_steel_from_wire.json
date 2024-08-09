@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "superheated",
+  "ingredients": [
+    {
+      "item" : "kubejs:stainless_steel_wire"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "firmalife:metal/stainless_steel",
+      "amount": 25
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AAA",
+    "BCB",
+    "DED"
+  ],
+  "key": {
+    "A": {
+      "item": "firmaciv:medium_triangular_sail"
+    },
+    "B": {
+      "item": "firmaciv:rope_coil"
+    },
+    "C": {
+      "item": "tfc:metal/lamp/wrought_iron"
+    },
+    "D": {
+      "tag": "minecraft:planks"
+    },
+    "E": {
+      "tag": "minecraft:wooden_slabs"
+    }
+  },
+  "result": {
+    "item": "breezy:hot_air_balloon",
+    "count": 1
+  }
+}

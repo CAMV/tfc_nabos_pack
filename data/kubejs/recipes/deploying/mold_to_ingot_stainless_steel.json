@@ -1,0 +1,31 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+      {
+          "type": "tfc:heatable",
+          "max_temp": 200,
+          "ingredient": {
+              "type": "forge:nbt",
+              "item": "tfc:ceramic/ingot_mold",
+              "nbt": {
+                  "tank": {
+                      "Amount": 100,
+                      "FluidName": "firmalife:stainless_steel"
+                  }
+              }
+          }
+      },
+      {
+          "tag": "tfc:chisels"
+      }
+  ],
+  "results": [
+      {
+          "item": "firmalife:metal/ingot/stainless_steel"
+      },
+      {
+          "item": "tfc:ceramic/ingot_mold",
+          "chance": 0.75
+      }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "tag": "minecraft:terracotta"
+    },
+    "B": {
+      "item": "create:mechanical_pump"
+    },
+    "C": {
+      "item": "afc:rubber_bar"
+    },
+    "D": {
+      "item": "create_new_age:heat_pipe"
+    }
+  },
+  "pattern": [
+    "CAC",
+    "DBD",
+    "CAC"
+  ],
+  "result": {
+    "item": "create_new_age:heat_pump",
+    "count": 4
+  }
+}

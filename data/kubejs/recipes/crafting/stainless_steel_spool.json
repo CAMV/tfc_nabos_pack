@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    "ABA",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "kubejs:stainless_steel_wire"
+    },
+    "B": {
+      "item": "createaddition:spool"
+    }
+  },
+  "result": {
+    "item": "kubejs:stainless_steel_spool",
+    "count": 1
+  }
+}

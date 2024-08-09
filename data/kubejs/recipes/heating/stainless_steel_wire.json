@@ -1,0 +1,11 @@
+{
+  "type": "tfc:heating",
+  "ingredient": {
+    "item": "kubejs:stainless_steel_wire"
+  },
+  "result_fluid": {
+    "fluid": "firmalife:metal/stainless_steel",
+    "amount": 25
+  },
+  "temperature": 1540
+}

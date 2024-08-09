@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " A ",
+    " B ",
+    " C "
+  ],
+  "key": {
+    "A": {
+      "item": "tfc:lens"
+    },
+    "B": {
+      "item": "tfcweather:metal/wind_vane/brass"
+    },
+    "C": {
+      "tag": "tfc:bowls"
+    }
+  },
+  "result": {
+    "item": "breezy:gust_gauge",
+    "count": 1
+  }
+}

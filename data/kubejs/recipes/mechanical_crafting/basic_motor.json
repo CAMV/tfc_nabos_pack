@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "create:shaft"
+    },
+    "B": {
+      "item": "tfc:metal/double_ingot/wrought_iron"
+    },
+    "C": {
+      "item": "create_new_age:magnetite_block"
+    },
+    "D": {
+      "item": "createaddition:connector"
+    },
+    "E": {
+      "item": "create:andesite_casing"
+    }
+  },
+  "pattern": [
+    "BBEEE",
+    "DCAAA",
+    "BBEEE"
+  ],
+  "result": {
+    "item": "create_new_age:basic_motor"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "tfc:metal/double_ingot/steel"
+    },
+    "B": {
+      "item": "create_new_age:basic_motor"
+    },
+    "C": {
+      "item": "createaddition:electrum_ingot"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCC",
+    "AAA"
+  ],
+  "result": {
+    "item": "create_new_age:basic_motor_extension"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "tfc:metal/double_ingot/black_steel"
+    },
+    "B": {
+      "item": "create_new_age:reinforced_motor"
+    },
+    "C": {
+      "item": "create_new_age:basic_motor_extension"
+    },
+    "D": {
+      "item": "tfc:metal/ingot/blue_steel"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCD",
+    "AAA"
+  ],
+  "result": {
+    "item": "create_new_age:advanced_motor_extension"
+  }
+}

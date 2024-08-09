@@ -1,0 +1,23 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "tfc:metal/ingot/black_steel"
+    },
+    "B": {
+      "item": "create_new_age:heat_pipe"
+    },
+    "C": {
+      "item": "kubejs:mirror"
+    }
+  },
+  "pattern": [
+    "CCCC",
+    "BBBB",
+    "AAAA"
+  ],
+  "result": {
+    "item": "create_new_age:basic_solar_heating_plate"
+  }
+}

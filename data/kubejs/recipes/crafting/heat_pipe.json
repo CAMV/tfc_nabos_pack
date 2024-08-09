@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "tag": "minecraft:terracotta"
+    },
+    "B": {
+      "item": "create:fluid_pipe"
+    },
+    "C": {
+      "item": "afc:rubber_bar"
+    },
+    "D": {
+      "item": "tfc:metal/sheet/black_steel"
+    }
+  },
+  "pattern": [
+    "CAC",
+    "DBD",
+    "CAC"
+  ],
+  "result": {
+    "item": "create_new_age:heat_pipe",
+    "count": 4
+  }
+}

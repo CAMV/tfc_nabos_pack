@@ -6,7 +6,7 @@
 		  "type": "tfc:heatable",
 		  "min_temp": 540,
 		  "ingredient": {
-			"tag": "kubejs:electrum_double_ingot"
+			"item": "kubejs:electrum_double_ingot"
 		}
 	  }
 	],
