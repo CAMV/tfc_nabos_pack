@@ -1,0 +1,17 @@
+{
+    "type": "create:compacting",
+    "ingredients": [
+        {
+        "item": "artisanal:wet_bagasse"
+        }
+    ],
+    "results": [
+        {
+        "item": "artisanal:dry_bagasse"
+        },
+        {
+        "fluid": "artisanal:sugarcane_juice",
+        "amount": 200
+        }
+    ]
+}

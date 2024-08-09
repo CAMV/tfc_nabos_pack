@@ -1,0 +1,21 @@
+{
+	"type": "createdieselgenerators:distillation",
+	"ingredients": [
+		{
+			"fluid": "artisanal:alkalized_sugarcane_juice",
+			"amount": 250
+		}
+	],
+	"heatRequirement": "heated",
+	"processingTime": 800,
+	"results": [
+	  {
+		"fluid": "artisanal:molasses",
+		"amount": 20
+	  },
+	  {
+		"fluid": "artisanal:clarified_sugarcane_juice",
+		"amount": 100
+	  }
+	]
+  }

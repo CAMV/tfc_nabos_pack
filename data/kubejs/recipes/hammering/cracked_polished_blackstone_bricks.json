@@ -1,0 +1,14 @@
+{
+	"type": "vintageimprovements:hammering",
+	"hammerBlows": 1,
+	"ingredients": [
+		{
+		  "item": "minecraft:polished_blackstone_bricks"
+		}
+	],
+	"results": [
+		{
+		  "item": "minecraft:cracked_polished_blackstone_bricks"
+		}
+	]
+}

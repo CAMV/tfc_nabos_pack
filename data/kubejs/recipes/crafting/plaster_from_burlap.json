@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "tfc:burlap_cloth"
+    }, {
+      "item": "tfc:glue"
+    }
+  ],
+  "result": {
+    "item": "firstaid:plaster"
+  }
+}

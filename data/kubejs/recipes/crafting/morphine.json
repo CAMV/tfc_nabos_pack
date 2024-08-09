@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "type":"tfc:fluid_item",
+      "fluid_ingredient":
+      {
+        "ingredient":"minecraft:water",
+        "amount":500
+      }
+    },
+    {
+      "tag": "tfc:glass_bottles"
+    }, 
+    {
+      "tag": "tfc:sweetener"
+    }, 
+    {
+      "tag": "kubejs:mushrooms"
+    }
+  ],
+  "result": {
+    "item": "firstaid:morphine"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "kubejs:fire_powder"
+    },
+    {
+      "item": "kubejs:fire_powder"
+    },
+    {
+      "item": "kubejs:fire_powder"
+    },
+    {
+      "item": "kubejs:fire_powder"
+    }
+  ],
+  "output_item": {
+    "item": "tfc:fire_clay"
+  }
+}

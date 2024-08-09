@@ -409,7 +409,7 @@ ServerEvents.recipes(event  => {
         A: 'tfc:lamp_glass', 
         B: 'create:polished_rose_quartz', 
         C: 'createaddition:electrum_sheet', 
-        D: '#kubejs:gems', 
+        D: '#forge:gems', 
       }
     )
 

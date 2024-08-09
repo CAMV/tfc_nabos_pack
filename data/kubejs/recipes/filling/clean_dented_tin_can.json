@@ -1,0 +1,17 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "artisanal:metal/dirty_dented_tin_can"
+    },
+    {
+      "fluid" : "artisanal:soapy_water",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "artisanal:metal/dented_tin_can"
+    }
+  ]
+}

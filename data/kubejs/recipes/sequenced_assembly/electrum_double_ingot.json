@@ -1,0 +1,96 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "type": "tfc:heatable",
+    "min_temp": 540,
+    "ingredient": {
+      "tag": "forge:ingots/electrum"
+    }
+  },
+  "transitionalItem": {
+    "item": "tfc_metal_items:unknown_double_sheet"
+  },
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_double_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_double_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_double_sheet"
+        },
+        {
+          "item": "tfc:powder/flux"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_double_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_double_sheet"
+        },
+        {
+          "type": "tfc:heatable",
+          "min_temp": 540,
+          "ingredient": {
+            "tag": "forge:ingots/electrum"
+          }
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_double_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_double_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_double_sheet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "tfc_metal_items:unknown_double_sheet"
+        }
+      ],
+      "results": [
+        {
+          "item": "tfc_metal_items:unknown_double_sheet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:electrum_double_ingot"
+    }
+  ],
+  "loops": 1
+}

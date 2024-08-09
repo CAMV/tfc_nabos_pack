@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/kaolinite",
+      "amount": 1
+    },
+    {
+      "item": "tfc:powder/graphite",
+      "amount": 1
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:fire_powder",
+      "amount": 1
+    }
+  ]
+}

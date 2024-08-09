@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "tfc:high_quality_cloth"
+    }, {
+      "item": "tfc:glue"
+    }
+  ],
+  "result": {
+    "item": "firstaid:plaster",
+    "count": 4
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "item": "tfc:powder/kaolinite"
+    },
+    {
+      "item": "tfc:powder/graphite"
+    }
+  ],
+  "output_item": {
+    "item": "kubejs:fire_powder"
+  }
+}

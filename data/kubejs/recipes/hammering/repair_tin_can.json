@@ -1,0 +1,14 @@
+{
+	"type": "vintageimprovements:hammering",
+	"hammerBlows": 3,
+	"ingredients": [
+		{
+		  "item": "artisanal:metal/dented_tin_can"
+		}
+	],
+	"results": [
+		{
+		  "item": "artisanal:metal/tin_can"
+		}
+	]
+}

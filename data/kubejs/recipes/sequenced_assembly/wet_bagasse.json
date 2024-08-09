@@ -1,0 +1,76 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "type": "tfc:not_rotten",
+    "ingredient": {
+      "item": "tfc:food/sugarcane"
+    }
+  },
+  "loops": 1,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_wet_bagasse"
+  },
+  "results": [
+    {
+      "item": "artisanal:wet_bagasse"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_wet_bagasse"
+        },
+        {
+          "fluid": "artisanal:soapy_water",
+          "amount": 100
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_wet_bagasse"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_wet_bagasse"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_wet_bagasse"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_wet_bagasse"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_wet_bagasse"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_wet_bagasse"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_wet_bagasse"
+        }
+      ]
+    }
+  ]
+}

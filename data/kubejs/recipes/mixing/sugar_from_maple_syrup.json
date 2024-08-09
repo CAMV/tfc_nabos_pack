@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "afc:maple_syrup",
+      "amount": 100
+    }
+  ],
+  "results": [
+    {
+      "item": "artisanal:perishable_sugar",
+      "amount": 1
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "type": "tfc:heatable",
+    "min_temp": 150,
+    "ingredient": {
+      "item": "kubejs:latex_curdle"
+    }
+  },
+  "loops": 1,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_rubber_bar"
+  },
+  "results": [
+    {
+      "item": "afc:rubber_bar"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_rubber_bar"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_rubber_bar"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_rubber_bar"
+        },
+        {
+          "item": "tfc:powder/sulfur"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_rubber_bar"
+        }
+      ]
+    },
+    {
+      "type":"createaddition:rolling",
+      "input": {
+            "item": "kubejs:incomplete_rubber_bar"
+      },
+      "results": [{
+        "item": "kubejs:incomplete_rubber_bar",
+        "count": 1
+      }]
+    }
+  ]
+}

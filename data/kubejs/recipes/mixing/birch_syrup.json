@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "afc:birch_sap_concentrate",
+      "amount": 500
+    }
+  ],
+  "results": [
+    {
+      "fluid": "afc:birch_sap_syrup",
+      "amount": 150
+    }
+  ]
+}

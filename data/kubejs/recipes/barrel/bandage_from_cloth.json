@@ -1,0 +1,19 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "tag": "tfc:high_quality_cloth"
+    }
+  },
+  "input_fluid": {
+    "ingredient": {
+      "tag": "tfc:alcohols"
+    },
+   "amount": 100
+  },
+  "output_item": {
+    "item": "firstaid:bandage",
+    "count": 4
+  },
+  "duration": 800
+}

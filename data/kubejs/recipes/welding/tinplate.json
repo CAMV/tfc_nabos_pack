@@ -1,0 +1,22 @@
+{
+  "type": "tfc:welding",
+  "first_input": {
+    "item": "tfc:metal/sheet/tin"
+  },
+  "second_input": {
+    "item": "firmalife:metal/sheet/stainless_steel"
+  },
+  "tier": 0,
+  "result": {
+    "stack": {
+      "item": "artisanal:metal/tinplate",
+      "count": 4
+    },
+    "modifiers": [
+      {
+        "type": "artisanal:cap_heat",
+        "max_temp": 229
+      }
+    ]
+  }
+}

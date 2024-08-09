@@ -1,0 +1,16 @@
+{
+  "type": "tfc:welding",
+  "first_input": {
+    "item": "createaddition:electrum_ingot"
+  },
+  "second_input": {
+    "item": "createaddition:electrum_ingot"
+  },
+  "tier": 3,
+  "result": {
+    "stack": {
+      "item": "kubejs:electrum_double_ingot",
+      "count": 1
+    }
+  }
+}

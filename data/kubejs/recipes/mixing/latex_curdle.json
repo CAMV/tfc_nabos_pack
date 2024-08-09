@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "afc:latex",
+      "amount": 100
+    },
+    {
+      "fluid": "tfc:vinegar",
+      "amount": 50
+    }
+  ],
+  "results": [
+    {
+      "item": "kubejs:latex_curdle",
+      "amount": 1
+    }
+  ]
+}

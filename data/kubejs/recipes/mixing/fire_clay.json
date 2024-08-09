@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "minecraft:clay_ball"
+    },
+    {
+      "item": "tfc:powder/kaolinite"
+    },
+    {
+      "item": "tfc:powder/graphite"
+    },
+    {
+      "item": "tfc:powder/kaolinite"
+    },
+    {
+      "item": "tfc:powder/graphite"
+    },
+    {
+      "item": "tfc:powder/kaolinite"
+    },
+    {
+      "item": "tfc:powder/graphite"
+    },
+    {
+      "item": "tfc:powder/kaolinite"
+    },
+    {
+      "item": "tfc:powder/graphite"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:fire_clay",
+      "amount": 1
+    }
+  ]
+}

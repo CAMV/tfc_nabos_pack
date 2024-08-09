@@ -1,5 +1,15 @@
 ServerEvents.recipes(event  => {
 
+
+  event.remove({ id: 'createaddition:mixing/biomass_from_sticks' })
+  event.remove({ id: 'createaddition:mixing/biomass_from_leaves' })
+  event.remove({ id: 'createaddition:mixing/biomass_from_flowers' })
+  event.remove({ id: 'createaddition:mixing/biomass_from_crops' })
+  event.remove({ id: 'createaddition:mixing/biomass_from_plant_foods' })
+  event.remove({ id: 'createaddition:mixing/biomass_from_plants' })
+  event.remove({ id: 'createaddition:mixing/biomass_from_saplings' })
+  event.remove({ id: 'createaddition:mixing/biomass_from_honeycomb' })
+
   event.remove({ output: 'createaddition:connector' })
   event.shaped('2x createaddition:connector', [
     ' A ', 

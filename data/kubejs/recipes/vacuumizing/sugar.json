@@ -1,0 +1,17 @@
+{
+	"type":"vintageimprovements:vacuumizing",
+	"heatRequirement": "heated",
+	"ingredients": [ 
+		{
+			"fluid": "artisanal:clarified_sugarcane_juice",
+			"amount": 100
+		}
+	],
+	"results": [
+		{
+			"item": "artisanal:non_perishable_sugar",
+			"count": 1
+		}
+	],
+	"processingTime": 600
+}

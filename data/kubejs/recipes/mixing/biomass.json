@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluidTag" : "tfc:alcohols",
+      "amount": 200
+    },
+    {
+      "tag": "firmalife:sweetener"
+    },
+    {
+      "item": "tfc:compost",
+      "count": 8
+    }
+  ],
+  "results": [
+    {
+      "item": "createaddition:biomass",
+      "count": 1
+    }
+  ]
+}

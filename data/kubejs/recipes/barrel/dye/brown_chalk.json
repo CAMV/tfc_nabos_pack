@@ -1,0 +1,19 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "tag": "kubejs:non_brown_chalks"
+    }
+  },
+  "input_fluid": {
+    "ingredient": {
+      "fluid": "tfc:brown_dye"
+    },
+   "amount": 25
+  },
+  "output_item": {
+    "item": "chalk:brown_chalk",
+    "count": 1
+  },
+  "duration": 200
+}

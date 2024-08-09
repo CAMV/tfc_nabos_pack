@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+      {
+        "item": "beneath:blackstone_pebble"
+      },
+      {
+          "tag": "tfc:chisels"
+      }
+  ],
+  "results": [
+      {
+          "item": "beneath:blackstone_brick"
+      }
+  ]
+}

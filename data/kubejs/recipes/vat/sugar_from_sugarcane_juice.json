@@ -1,0 +1,20 @@
+{
+  "type": "firmalife:vat",
+  "input_fluid": {
+    "ingredient": "artisanal:sugarcane_juice",
+    "amount": 200
+  },
+  "input_item": {
+    "ingredient": {
+      "item" : "firmalife:spoon"
+    }
+  },
+  "output_item": {
+    "item": "artisanal:perishable_sugar",
+    "amount": 1
+  },
+  "output_fluid": {
+    "fluid": "artisanal:molasses",
+    "amount": 20
+  }
+}

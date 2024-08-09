@@ -1,0 +1,18 @@
+{
+	"type": "vintageimprovements:hammering",
+	  "hammerBlows": 8,
+	  "ingredients": [
+		{
+		  "type": "tfc:heatable",
+		  "min_temp": 540,
+		  "ingredient": {
+			"tag": "kubejs:electrum_double_ingot"
+		}
+	  }
+	],
+	"results": [
+	  {
+		"item": "createaddition:electrum_sheet"
+	  }
+	]
+  }

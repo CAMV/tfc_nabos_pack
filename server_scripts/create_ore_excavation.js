@@ -73,7 +73,7 @@ ServerEvents.recipes(event  => {
     '   '  
   ], {
     A: '#forge:chests', 
-    B: '#kubejs:gems', 
+    B: '#forge:gems', 
     C: 'minecraft:map',
     D: 'minecraft:writable_book', 
   })

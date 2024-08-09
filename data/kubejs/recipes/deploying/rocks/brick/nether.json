@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+      {
+        "item": "beneath:nether_pebble"
+      },
+      {
+          "tag": "tfc:chisels"
+      }
+  ],
+  "results": [
+      {
+          "item": "minecraft:nether_brick"
+      }
+  ]
+}

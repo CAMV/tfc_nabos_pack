@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "AA",
+      "AA"
+    ],
+    "key": {
+      "A": {
+        "item": "beneath:crimson_straw"
+      }
+    },
+    "result": {
+      "item": "beneath:crimson_thatch",
+      "count": 1
+    }
+  }

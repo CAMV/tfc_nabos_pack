@@ -1,0 +1,19 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "tag": "kubejs:non_light_gray_chalks"
+    }
+  },
+  "input_fluid": {
+    "ingredient": {
+      "fluid": "tfc:light_gray_dye"
+    },
+   "amount": 25
+  },
+  "output_item": {
+    "item": "chalk:light_gray_chalk",
+    "count": 1
+  },
+  "duration": 200
+}

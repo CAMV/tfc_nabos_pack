@@ -1,0 +1,22 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid" : "artisanal:filtered_sugarcane_juice",
+      "amount": 400
+    },
+    {
+			"fluid": "vintageimprovements:sulfur_dioxide",
+			"amount": 100
+		},
+    {
+      "item" : "tfc:powder/lime"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "artisanal:alkalized_sugarcane_juice",
+      "amount": 500
+    }
+  ]
+}

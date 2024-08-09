@@ -1,0 +1,18 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "artisanal:food/cleaned_sugarcane"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "item": "artisanal:wet_bagasse"
+    },
+    {
+      "chance": 0.5,
+      "item": "artisanal:wet_bagasse"
+    }
+  ]
+}

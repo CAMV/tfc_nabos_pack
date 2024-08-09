@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "artisanal:milk_flakes"
+    }
+  ],
+  "processingTime": 200,
+  "results": [
+    {
+      "item": "artisanal:powdered_milk",
+      "count": 2
+    },
+    {
+      "chance": 0.25,
+      "item": "artisanal:powdered_milk"
+    }
+  ]
+}

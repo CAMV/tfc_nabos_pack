@@ -1,0 +1,15 @@
+{
+  "type": "artisanal:scalable_pot",
+  "ingredients": [],
+  "fluid_ingredient": {
+    "ingredient": "afc:birch_syrup",
+    "amount": 100
+  },
+  "duration": 2000,
+  "temperature": 107,
+  "item_output": [
+    {
+      "item": "artisanal:perishable_sugar"
+    }
+  ]
+}

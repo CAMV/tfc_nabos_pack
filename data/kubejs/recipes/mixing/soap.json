@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid" : "tfc:lye",
+      "amount": 1
+    },
+    {
+      "fluidTag" : "artisanal:rendered_fats",
+      "amount": 9
+    }
+  ],
+  "results": [
+    {
+      "fluid": "artisanal:soap",
+      "amount": 1
+    }
+  ]
+}

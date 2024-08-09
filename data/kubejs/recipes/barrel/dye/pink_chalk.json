@@ -1,0 +1,19 @@
+{
+  "type": "tfc:barrel_sealed",
+  "input_item": {
+    "ingredient": {
+      "tag": "kubejs:non_pink_chalks"
+    }
+  },
+  "input_fluid": {
+    "ingredient": {
+      "fluid": "tfc:pink_dye"
+    },
+   "amount": 25
+  },
+  "output_item": {
+    "item": "chalk:pink_chalk",
+    "count": 1
+  },
+  "duration": 200
+}

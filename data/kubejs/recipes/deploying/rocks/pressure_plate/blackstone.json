@@ -1,0 +1,16 @@
+{
+  "type": "create:deploying",
+  "ingredients": [
+      {
+        "item": "minecraft:polished_blackstone_button"
+      },
+      {
+          "tag": "tfc:chisels"
+      }
+  ],
+  "results": [
+      {
+          "item": "minecraft:polished_blackstone_pressure_plate"
+      }
+  ]
+}
