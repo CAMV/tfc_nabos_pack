@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "create_new_age:advanced_motor"
+    },
+    "B": {
+      "item": "tfc:metal/sheet/copper"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BAB",
+    " B "
+  ],
+  "result": {
+    "item": "immersive_aircraft:eco_engine"
+  }
+}

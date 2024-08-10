@@ -1,0 +1,37 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "createoreexcavation:sample_drill"
+    },
+    "B": {
+      "item": "create:copper_casing"
+    },
+    "C": {
+      "item": "create:precision_mechanism"
+    },
+    "D": {
+      "item": "create:hose_pulley"
+    },
+    "E": {
+      "item": "create:andesite_alloy"
+    },
+    "F": {
+      "item": "create:fluid_pipe"
+    },
+    "G": {
+      "item": "tfc:metal/double_ingot/steel"
+    }
+  },
+  "pattern": [
+    "GBFBG",
+    "BBDBB",
+    "BCACF",
+    "BBEBB",
+    "GBEBG"
+  ],
+  "result": {
+    "item": "createoreexcavation:extractor"
+  }
+}

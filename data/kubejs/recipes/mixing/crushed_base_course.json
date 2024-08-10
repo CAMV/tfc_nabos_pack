@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "forge:gravel"
+    },
+    {
+      "tag": "rnr:loose_rock_items"
+    }
+  ],
+  "results": [
+    {
+      "item": "rnr:crushed_base_course",
+      "amount": 6
+    }
+  ]
+}

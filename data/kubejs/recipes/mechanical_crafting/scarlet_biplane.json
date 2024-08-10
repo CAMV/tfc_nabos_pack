@@ -1,0 +1,43 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "tag": "create:seats"
+    },
+    "B": {
+      "item": "man_of_many_planes:economy_plane"
+    },
+    "C": {
+      "tag": "minecraft:planks"
+    },
+    "D": {
+      "item": "tfc:metal/sheet/steel"
+    },
+    "E": {
+      "item": "create:encased_fan"
+    },
+    "G": {
+      "item": "createdieselgenerators:large_diesel_engine"
+    },    
+    "H": {
+      "item": "create:gearbox"
+    },
+    "I": {
+      "tag": "forge:dyes/red"
+    }
+  },
+  "pattern": [
+    "   CDC   ",
+    " CCDHDCC ",
+    "   IDI   ",
+    "   IDI   ",
+    "   IAI   ",
+    "CCCCBCCCC",
+    "CCCCGCCCC",
+    "   DED   "
+  ],
+  "result": {
+    "item": "man_of_many_planes:scarlet_biplane"
+  }
+}

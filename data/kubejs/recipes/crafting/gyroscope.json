@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "create:electron_tube"
+    },
+    "B": {
+      "item": "firmaciv:firmaciv_compass"
+    },
+    "C": {
+      "item": "vintageimprovements:redstone_module"
+    },
+    "D": {
+      "item": "tfc:metal/sheet/copper"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "DCD"
+  ],
+  "result": {
+    "item": "immersive_aircraft:gyroscope"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "create:andesite_alloy"
+    },
+    "A": {
+      "item": "tfc:metal/ingot/copper"
+    },
+    "C": {
+      "item": "create:shaft"
+    }
+  },
+  "pattern": [
+    "   ",
+    "ABA",
+    " C "
+  ],
+  "result": {
+    "item": "create:copper_valve_handle"
+  }
+}

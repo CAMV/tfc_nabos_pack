@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "create:fluid_pipe"
+    },
+    "B": {
+      "item": "afc:rubber_bar"
+    }
+  },
+  "pattern": [
+    "  A",
+    "ABA",
+    "A  "
+  ],
+  "result": {
+    "item": "immersive_aircraft:sturdy_pipes"
+  }
+}

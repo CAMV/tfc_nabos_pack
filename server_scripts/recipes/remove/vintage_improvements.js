@@ -1,19 +1,5 @@
 // priority: 0
 
-ServerEvents.tags('item', event => {
-
-    event.removeAllTagsFrom('minecraft:anvil')
-    event.removeAllTagsFrom('minecraft:chipped_anvil')
-    event.removeAllTagsFrom('minecraft:damaged_anvil')
-
-    event.add('vintageimprovements:anvils', 'tfc:metal/anvil/steel')
-    event.add('vintageimprovements:anvils', 'tfc:metal/anvil/black_steel')
-    event.add('vintageimprovements:anvils', 'tfc:metal/anvil/blue_steel')
-    event.add('vintageimprovements:anvils', 'tfc:metal/anvil/red_steel')
-
-})
-
-
 ServerEvents.recipes(event  => {
     let mod = 'vintageimprovements'
 
@@ -32,11 +18,4 @@ ServerEvents.recipes(event  => {
 
     event.remove({ id: `tfc_metal_items:seq_pressing/sheets/pig_iron` })
     event.remove({ id: `${mod}:curving/iron_sheet` })
-
-
-
-
-
-
-
 })

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "firmaciv:medium_triangular_sail"
+    },
+    "B": {
+      "tag": "minecraft:planks"
+    },
+    "D": {
+      "item": "tfc:metal/sheet/steel"
+    }
+  },
+  "pattern": [
+    "DBD",
+    "AAA",
+    "DBD"
+  ],
+  "result": {
+    "item": "immersive_aircraft:hull_reinforcement"
+  }
+}

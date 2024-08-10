@@ -1,28 +1,6 @@
 ServerEvents.recipes(event  => {
 
-    let rolling = (input, output, temp, output_amount) =>
-        {
-            event.custom({
-                type: 'createaddition:rolling',
-                input : {
-                    type: 'tfc:heatable',
-                    min_temp: temp,
-                    ingredient : {
-                        item: input
-                    }
-                },
-                result: {
-                    item : output,
-                    count: output_amount
-                }
-            })
-        }
 
-    event.remove({ id: 'create:crafting/appliances/linked_controller' })
-    event.remove({ id: 'create:crafting/schematics/schematicannon' })
-    event.remove({ id: 'create:crafting/kinetics/steam_engine' })
-   
-    event.remove({ id: 'woodencog:crafting/schematics/schematicannon' })
 
     event.shaped('create:schematicannon', [// arg 1: output
         ' A ', 
@@ -37,13 +15,8 @@ ServerEvents.recipes(event  => {
     )
 
     event.remove({ id: 'create:crafting/schematics/schematic_table' })
-
-    event.remove({ output: 'create:shaft' })
-    event.recipes.tfc.anvil('3x create:shaft', 'create:andesite_alloy' , ["bend_last", "hit_not_last", "hit_not_last"]).tier(2)
-
-    event.remove({ output: 'create:shaft' })
-
-    rolling('create:andesite_alloy', 'create:shaft', 300, 3)
+    event.remove({ id: 'create:crafting/kinetics/shaft' })
+    event.remove({ id: 'create:cutting/andesite_alloy' })
 
     event.remove({ id: 'create:crafting/kinetics/cogwheel' })
     event.shapeless('create:cogwheel', ['#minecraft:planks', 'tfc:brass_mechanisms', 'create:shaft']).id('kubejs:cogwheel_manual_only')
@@ -66,28 +39,6 @@ ServerEvents.recipes(event  => {
     )
 
     event.remove({ id: 'create:crafting/kinetics/adjustable_chain_gearshift' })
-
-    event.remove({ output: 'create:belt_connector' })
-    event.shaped('create:belt_connector', [
-        '   ', 
-        'AAA', 
-        'AAA'  
-      ], {
-        A: 'afc:rubber_bar', 
-      }
-    )
-
-    event.remove({ id: 'create:crafting/kinetics/water_wheel' })
-    event.shaped('create:water_wheel', [
-        ' A ', 
-        'ABA', 
-        ' C '  
-      ], {
-        A: '#firmaciv:hard_wood', 
-        B: '#tfc:water_wheels', 
-        C: 'create:shaft', 
-      }
-    )
 
     event.remove({ id: 'create:crafting/kinetics/encased_fan' })
 

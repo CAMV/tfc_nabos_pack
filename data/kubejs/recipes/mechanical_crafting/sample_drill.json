@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "tfc:metal/sheet/brass"
+    },
+    "B": {
+      "item": "create:electron_tube"
+    },
+    "C": {
+      "item": "create:precision_mechanism"
+    },
+    "D": {
+      "item": "create:brass_casing"
+    },
+    "E": {
+      "item": "tfc:metal/double_ingot/steel"
+    },
+    "F": {
+      "item": "create:mechanical_drill"
+    },
+    "G": {
+      "item": "create:fluid_pipe"
+    }
+  },
+  "pattern": [
+    "BGB",
+    "DCD",
+    "EFE"
+  ],
+  "result": {
+    "item": "createoreexcavation:sample_drill"
+  }
+}

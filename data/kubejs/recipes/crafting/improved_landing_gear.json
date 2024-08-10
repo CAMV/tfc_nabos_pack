@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "afc:rubber_bar"
+    },
+    "B": {
+      "item": "create:gearbox"
+    },
+    "D": {
+      "item": "tfc:metal/ingot/steel"
+    }
+  },
+  "pattern": [
+    " D ",
+    "ABA",
+    "AAA"
+  ],
+  "result": {
+    "item": "immersive_aircraft:improved_landing_gear"
+  }
+}

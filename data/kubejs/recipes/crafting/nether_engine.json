@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "createdieselgenerators:large_diesel_engine"
+    },
+    "B": {
+      "item": "tfc:metal/sheet/copper"
+    }
+  },
+  "pattern": [
+    " B ",
+    "BAB",
+    " B "
+  ],
+  "result": {
+    "item": "immersive_aircraft:nether_engine"
+  }
+}

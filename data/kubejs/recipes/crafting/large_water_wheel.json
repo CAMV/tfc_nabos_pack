@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "create:water_wheel"
+    },
+    "C": {
+      "tag": "firmaciv:hard_wood"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "CBC",
+    "CCC"
+  ],
+  "result": {
+    "item": "create:large_water_wheel"
+  }
+}

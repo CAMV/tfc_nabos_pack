@@ -1,0 +1,16 @@
+{
+  "type": "tfc:anvil",
+  "input": {
+    "item": "create:andesite_alloy"
+  },
+  "result": {
+    "item": "create:shaft",
+    "count": 2
+  },
+  "tier": 2,
+  "rules": [
+    "bend_last",
+    "hit_second_last",
+    "hit_third_last"
+  ]
+}

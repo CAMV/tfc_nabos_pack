@@ -10,5 +10,12 @@ ServerEvents.recipes(event  => {
   
   event.remove({ id: `woodencog:rock_knapping/andesite_alloy` })
   event.remove({ id: `woodencog:mixing/barrel/clean_jute_net` })
+  event.remove({ id: `woodencog:crafting/appliances/copper_backtank` })
+
+  event.remove({ id: `woodencog:crafting/mechanical_crafting/wand_of_symmetry` })
+  event.remove({ id: `woodencog:crafting/schematics/schematic_table` })
+
+  event.remove({ id: 'woodencog:crafting/schematics/schematicannon' })
+  event.remove({ id: 'woodencog:crafting/kinetics/belt_connector' })
 
 })

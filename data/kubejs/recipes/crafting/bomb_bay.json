@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "create:electron_tube"
+    },
+    "C": {
+      "item": "create:chute"
+    },
+    "D": {
+      "item": "tfc:metal/sheet/copper"
+    },
+    "A": {
+      "item": "create:gearbox"
+    }
+  },
+  "pattern": [
+    " B ",
+    "DAD",
+    "DCD"
+  ],
+  "result": {
+    "item": "immersive_aircraft:bomb_bay"
+  }
+}

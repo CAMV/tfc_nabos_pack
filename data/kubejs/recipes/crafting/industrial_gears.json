@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "create:precision_mechanism"
+    },
+    "B": {
+      "item": "create:cogwheel"
+    },
+    "C": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "CCC"
+  ],
+  "result": {
+    "item": "immersive_aircraft:industrial_gears"
+  }
+}

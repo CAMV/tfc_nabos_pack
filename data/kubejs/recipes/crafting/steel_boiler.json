@@ -2,10 +2,10 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "tag": "tfc:barrels"
+      "item": "createdieselgenerators:engine_turbocharger"
     },
     "B": {
-      "item": "tfc:metal/sheet/bismuth_bronze"
+      "item": "createdieselgenerators:engine_silencer"
     },
     "C": {
       "item": "tfc:metal/sheet/steel"
@@ -14,10 +14,9 @@
   "pattern": [
     " B ",
     "CAC",
-    " B "
+    "C C"
   ],
   "result": {
-    "item": "createdieselgenerators:oil_barrel",
-    "count": 2
+    "item": "immersive_aircraft:steel_boiler"
   }
 }

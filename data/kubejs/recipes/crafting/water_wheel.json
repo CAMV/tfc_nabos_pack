@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "create:gearbox"
+    },
+    "B": {
+      "tag": "tfc:water_wheels"
+    },
+    "C": {
+      "tag": "firmaciv:hard_wood"
+    }
+  },
+  "pattern": [
+    " A ",
+    "CBC",
+    " A "
+  ],
+  "result": {
+    "item": "create:water_wheel"
+  }
+}

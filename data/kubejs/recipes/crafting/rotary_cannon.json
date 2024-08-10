@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "musketmod:musket"
+    },
+    "B": {
+      "item": "create:electron_tube"
+    },
+    "C": {
+      "item": "create:gearbox"
+    },
+    "D": {
+      "item": "tfc:metal/sheet/copper"
+    }
+  },
+  "pattern": [
+    "ABA",
+    " C ",
+    "DDD"
+  ],
+  "result": {
+    "item": "immersive_aircraft:rotary_cannon"
+  }
+}

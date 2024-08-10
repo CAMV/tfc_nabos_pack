@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "create:electron_tube"
+    },
+    "C": {
+      "item": "minecraft:spyglass"
+    },
+    "D": {
+      "item": "tfc:metal/sheet/copper"
+    },
+    "A": {
+      "item": "create:gearbox"
+    }
+  },
+  "pattern": [
+    " C ",
+    " B ",
+    "DAD"
+  ],
+  "result": {
+    "item": "immersive_aircraft:telescope"
+  }
+}

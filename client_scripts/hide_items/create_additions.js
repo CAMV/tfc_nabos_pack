@@ -16,6 +16,9 @@ JEIEvents.hideItems( event => {
   event.hide('createaddition:straw')
   event.hide('createaddition:electrum_amulet')
   event.hide('createaddition:gold_spool')
+  event.hide('createaddition:biomass_pellet')
+  event.hide('createaddition:biomass_pellet_block')
+
 })
 
 JEIEvents.hideFluids ( event => {

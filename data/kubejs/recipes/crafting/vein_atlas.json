@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AB",
+    "CD"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:chests"
+    },
+    "B": {
+      "tag": "forge:gems"
+    },
+    "C": {
+      "item": "minecraft:map"
+    },
+    "D": {
+      "item": "minecraft:writable_book"
+    }
+  },
+  "result": {
+    "item": "createoreexcavation:vein_atlas",
+    "count": 1
+  }
+}

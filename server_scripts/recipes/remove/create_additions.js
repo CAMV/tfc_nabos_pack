@@ -43,6 +43,7 @@ ServerEvents.recipes(event  => {
   event.remove({ id: `createaddition:crafting/modular_accumulator_electrum` })
   event.remove({ id: `createaddition:crafting/modular_accumulator_gold` })
 
-
+  event.remove({ id: `createaddition:crafting/biomass_pellet` })
+  event.remove({ id: `createaddition:crafting/biomass_pellet_block` })
 
 })

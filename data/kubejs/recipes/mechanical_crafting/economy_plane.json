@@ -1,0 +1,44 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "B": {
+      "tag": "create:seats"
+    },
+    "C": {
+      "tag": "tfc:lumber"
+    },
+    "D": {
+      "item": "tfc:metal/sheet/steel"
+    },
+    "E": {
+      "item": "create:encased_fan"
+    },
+    "F": {
+      "item": "afc:rubber_bar"
+    },
+    "G": {
+      "item": "createdieselgenerators:diesel_engine"
+    },    
+    "H": {
+      "item": "create:gearbox"
+    },
+    "I": {
+      "item": "firmaciv:small_triangular_sail"
+    }
+  },
+  "pattern": [
+    "   ICI   ",
+    "  IIHII  ",
+    "   CDC   ",
+    "   CDC   ",
+    "   CDC   ",
+    " EFFGFFE ",
+    "CCCCDCCCC",
+    "IIIIBIIII",
+    "CCCCDCCCC"
+  ],
+  "result": {
+    "item": "man_of_many_planes:economy_plane"
+  }
+}

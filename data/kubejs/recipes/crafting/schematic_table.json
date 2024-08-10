@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "B": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "pattern": [
+    "AAA",
+    " B ",
+    " B "
+  ],
+  "result": {
+    "item": "create:schematic_table"
+  }
+}

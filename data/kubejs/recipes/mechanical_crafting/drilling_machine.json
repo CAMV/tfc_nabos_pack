@@ -1,0 +1,40 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "createoreexcavation:sample_drill"
+    },
+    "B": {
+      "item": "create:brass_casing"
+    },
+    "C": {
+      "item": "create:precision_mechanism"
+    },
+    "D": {
+      "item": "create:spout"
+    },
+    "E": {
+      "item": "create:andesite_alloy"
+    },
+    "F": {
+      "item": "create:fluid_pipe"
+    },
+    "G": {
+      "item": "tfc:metal/double_ingot/steel"
+    },
+    "H": {
+      "item": "create:brass_tunnel"
+    }
+  },
+  "pattern": [
+    "GBFBG",
+    "BBDBB",
+    "BCACH",
+    "BBEBB",
+    "GBEBG"
+  ],
+  "result": {
+    "item": "createoreexcavation:drilling_machine"
+  }
+}

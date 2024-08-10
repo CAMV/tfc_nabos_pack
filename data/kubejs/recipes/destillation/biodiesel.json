@@ -3,20 +3,27 @@
 	"ingredients": [
 		{
 			"fluid": "createdieselgenerators:plant_oil",
-			"amount": 100
+			"amount": 250
 		}
 	],
 	"heatRequirement": "heated",
 	"processingTime": 1600,
 	"results": [
-  
-	  {
-		"fluid": "minecraft:water",
-		"amount": 80
-	  },
-	  {
-		"fluid": "createdieselgenerators:biodisel",
-		"amount": 50
-	  }
+		{
+			"fluid": "minecraft:water",
+			"amount": 30
+		},
+		{
+			"fluid": "createdieselgenerators:plant_oil",
+			"amount": 15
+		},
+		{
+			"fluid": "createdieselgenerators:ethanol",
+			"amount": 5
+		},
+		{
+			"fluid": "createdieselgenerators:biodiesel",
+			"amount": 100
+		}
 	]
-  }
+}
