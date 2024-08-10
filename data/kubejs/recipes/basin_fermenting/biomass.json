@@ -1,0 +1,32 @@
+{
+    "type": "createdieselgenerators:basin_fermenting",
+    "heatRequirement": "heated",
+    "ingredients": [
+        {
+            "fluid": "createdieselgenerators:ethanol",
+            "amount": 20
+        },
+        {
+            "tag": "tfc:sweetener"
+        },
+        {
+            "item": "tfc:compost"
+        },
+        {
+            "item": "tfc:compost"
+        },
+        {
+            "item": "tfc:compost"
+        },
+        {
+            "item": "tfc:compost"
+        }
+    ],
+    "processingTime": 1600,
+    "results": [
+        {
+            "item": "createaddition:biomass",
+            "amount": 4
+        }
+    ]
+  }

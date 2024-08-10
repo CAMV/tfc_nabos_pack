@@ -1,0 +1,76 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tfc:metal/sheet/steel"
+  },
+  "loops": 2,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_engine_silencer"
+  },
+  "results": [
+    {
+      "item": "createdieselgenerators:engine_silencer"
+    }
+  ],
+  "sequence": [
+    {
+      "type":"vintageimprovements:turning",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_silencer"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_silencer"
+        }
+      ],
+      "processingTime": 400
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_silencer"
+        },
+        {
+          "item": "tfc:metal/sheet/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_silencer"
+        }
+      ]
+    },
+    {
+      "type": "vintageimprovements:curving",
+      "mode": 1,
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_silencer"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_silencer"
+        }
+      ]
+    },
+    {
+      "type":"vintageimprovements:laser_cutting",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_silencer"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_silencer"
+        }
+      ],
+      "energy": 800,
+      "maxChargeRate": 50
+    }
+  ]
+}

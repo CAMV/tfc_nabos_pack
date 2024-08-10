@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "tfc:metal/sheet/bismuth_bronze"
+    },
+    "B": {
+      "item": "create:mechanical_bearing"
+    },
+    "C": {
+      "item": "tfc:metal/ingot/steel"
+    }
+  },
+  "pattern": [
+    "CAC",
+    "ABA",
+    "CAC"
+  ],
+  "result": {
+    "item": "createdieselgenerators:pumpjack_bearing",
+    "count": 1
+  }
+}

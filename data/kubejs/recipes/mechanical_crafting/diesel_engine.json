@@ -1,0 +1,35 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "createdieselgenerators:engine_piston"
+    },
+    "B": {
+      "item": "tfc:metal/double_ingot/steel"
+    },
+    "C": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "D": {
+      "item": "create:fluid_tank"
+    },
+    "E": {
+      "item": "tfc:metal/sheet/brass"
+    },
+    "F": {
+      "item": "create:fluid_pipe"
+    },
+    "G": {
+      "item": "create:shaft"
+    }
+  },
+  "pattern": [
+    "EAEAE",
+    "FDCGG",
+    "BBBBB"
+  ],
+  "result": {
+    "item": "createdieselgenerators:diesel_engine"
+  }
+}

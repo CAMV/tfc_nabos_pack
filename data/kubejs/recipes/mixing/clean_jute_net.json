@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "fluid": "artisanal:soapy_water",
+      "amount": 100
+    },
+    {
+      "item": "tfc:dirty_jute_net"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:jute_net"
+    }
+  ]
+}

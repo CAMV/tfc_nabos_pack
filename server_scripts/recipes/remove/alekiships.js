@@ -1,7 +1,10 @@
 
 ServerEvents.recipes(event  => {
 
-  let mod = 'alekiships'
-  event.remove({ id: `${mod}:crafting/cannon` })
+  event.remove({ id: `alekiships:crafting/cannon` })
+  event.remove({ id: `alekiships:crafting/cleat` })
+  event.remove({ id: `alekiships:crafting/oarlock` })
+  event.remove({ id: `alekiships:crafting/anchor` })
+  event.remove({ id: `alekiships:crafting/cannonball` })
   
 })

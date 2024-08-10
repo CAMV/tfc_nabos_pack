@@ -1,0 +1,28 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "HH  ",
+    "MCKP"
+  ],
+  "key": {
+    "M": {
+      "item": "create:precision_mechanism"
+    },
+    "P": {
+      "item": "create:fluid_pipe"
+    },
+    "C": {
+      "item": "tfc:metal/double_sheet/copper"
+    },
+    "H": {
+      "item": "createdieselgenerators:kelp_handle"
+    },
+    "K": {
+      "item": "afc:rubber_bar"
+    }
+  },
+  "result": {
+    "item": "createdieselgenerators:chemical_sprayer",
+    "count": 1
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "createdieselgenerators:diesel_engine"
+    },
+    "B": {
+      "item": "tfc:metal/double_ingot/steel"
+    },
+    "C": {
+      "item": "tfc:metal/sheet/brass"
+    },
+    "D": {
+      "item": "create:fluid_pipe"
+    },
+    "E": {
+      "item": "createdieselgenerators:engine_piston"
+    }
+  },
+  "pattern": [
+    "CEC",
+    "DAD",
+    "BBB"
+  ],
+  "result": {
+    "item": "createdieselgenerators:large_diesel_engine"
+  }
+}

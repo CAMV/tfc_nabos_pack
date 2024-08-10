@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "tfc:metal/chain/steel"
+    },
+    "B": {
+      "item": "create:fluid_pipe"
+    },
+    "C": {
+      "item": "create:copper_casing"
+    },
+    "D": {
+      "item": "tfc:metal/sheet/bismuth_bronze"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "DCD",
+    "ABA"
+  ],
+  "result": {
+    "item": "createdieselgenerators:pumpjack_hole",
+    "count": 1
+  }
+}

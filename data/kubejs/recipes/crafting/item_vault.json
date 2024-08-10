@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "tag": "tfc:chests/wooden"
+    },
+    "B": {
+      "item": "tfc:metal/sheet/wrought_iron"
+    },
+    "C": {
+      "item": "create:andesite_alloy"
+    }
+  },
+  "pattern": [
+    " C ",
+    "BAB",
+    " C "
+  ],
+  "result": {
+    "item": "create:item_vault",
+    "count": 1
+  }
+}

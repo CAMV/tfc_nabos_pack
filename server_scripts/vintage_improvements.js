@@ -31,6 +31,7 @@ ServerEvents.recipes(event  => {
     event.remove({ id: `${mod}:rolling/pig_iron_ingot` })
 
     event.remove({ id: `tfc_metal_items:seq_pressing/sheets/pig_iron` })
+    event.remove({ id: `${mod}:curving/iron_sheet` })
 
 
 

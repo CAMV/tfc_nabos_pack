@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "tag": "tfc:barrels"
+    },
+    "B": {
+      "item": "tfc:metal/sheet/bismuth_bronze"
+    },
+    "C": {
+      "item": "tfc:metal/sheet/steel"
+    }
+  },
+  "pattern": [
+    " B ",
+    "CAC",
+    " B "
+  ],
+  "result": {
+    "item": "createdieselgenerators:oil_barrel",
+    "count": 1
+  }
+}

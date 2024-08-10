@@ -1,6 +1,7 @@
 {
-    "metal.kubejs.andesite_alloy": "Andesite Alloy",
-    "kubejs.andesite_alloy": "Andesite Alloy",
+    "metal.kubejs.andesite_alloy": "Zinc Alloy",
+    "kubejs.andesite_alloy": "Zinc Alloy",
     "metal.kubejs.electrum": "Electrum",
-    "kubejs.electrum": "Electrum"
+    "kubejs.electrum": "Electrum",
+    "create.andesite_alloy": "Zinc Alloy"
 }

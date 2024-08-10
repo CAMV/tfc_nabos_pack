@@ -13,9 +13,6 @@ JEIEvents.hideItems( event => {
     event.hide('createaddition:seed_oil_bucket')
     event.hide('createaddition:bioethanol_bucket')
 
-    event.hide('createdieselgenerators:ethanol_bucket')
-    event.hide('createdieselgenerators:ethanol_bucket')
-
     event.hide('createoreecavation:netherite_drill')
 
     event.hide('create:wheat_flour')
@@ -162,17 +159,11 @@ JEIEvents.hideItems( event => {
       })
   })
 
-  event.hide('alekiships:cannon')
-  event.hide('alekiships:watercraft_frame_angled')
-  event.hide('alekiships:watercraft_frame_flat')
-
   event.hide('create:framed_glass_trapdoor')
 })
 
 JEIEvents.hideFluids ( event => {
   event.hide('createaddition:seed_oil')
   event.hide('createaddition:bioethanol')
-  event.hide('createdieselgenerators:plant_oil')
-  event.hide('createdieselgenerators:ethanol')
 })
 

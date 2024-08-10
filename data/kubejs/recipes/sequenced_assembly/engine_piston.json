@@ -1,0 +1,93 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tfc:metal/double_ingot/steel"
+  },
+  "loops": 1,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_engine_piston"
+  },
+  "results": [
+    {
+      "item": "createdieselgenerators:engine_piston"
+    }
+  ],
+  "sequence": [
+    {
+      "type":"vintageimprovements:turning",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_piston"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_piston"
+        }
+      ],
+      "processingTime": 400
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_piston"
+        },
+        {
+          "item": "tfc:metal/rod/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_piston"
+        }
+      ]
+    },
+    {
+      "type":"vintageimprovements:laser_cutting",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_piston"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_piston"
+        }
+      ],
+      "energy": 800,
+      "maxChargeRate": 50
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_piston"
+        },
+        {
+          "item": "tfc:metal/ingot/steel"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_piston"
+        }
+      ]
+    },
+    {
+      "type":"vintageimprovements:laser_cutting",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_piston"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_piston"
+        }
+      ],
+      "energy": 800,
+      "maxChargeRate": 50
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+    "type": "createdieselgenerators:basin_fermenting",
+    "heatRequirement": "heated",
+    "ingredients": [
+        {
+            "fluid": "createdieselgenerators:ethanol",
+            "amount": 20
+        },
+        {
+            "tag": "tfc:sweetener"
+        },
+        {
+            "item": "createaddition:biomass_pellet"
+        },
+        {
+            "item": "createaddition:biomass_pellet"
+        },
+        {
+            "item": "createaddition:biomass_pellet"
+        },
+        {
+            "item": "createaddition:biomass_pellet"
+        },
+        {
+            "item": "createaddition:biomass_pellet"
+        },
+        {
+            "item": "createaddition:biomass_pellet"
+        },
+        {
+            "item": "createaddition:biomass_pellet"
+        },
+        {
+            "item": "createaddition:biomass_pellet"
+        }
+    ],
+    "processingTime": 1600,
+    "results": [
+        {
+            "item": "createaddition:biomass",
+            "amount": 4
+        }
+    ]
+  }

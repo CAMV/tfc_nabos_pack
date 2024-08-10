@@ -1,0 +1,78 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tfc:metal/double_sheet/steel"
+  },
+  "loops": 4,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_engine_turbocharger"
+  },
+  "results": [
+    {
+      "item": "createdieselgenerators:engine_turbocharger"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_turbocharger"
+        },
+        {
+          "item": "create_new_age:heat_pipe"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_turbocharger"
+        }
+      ]
+    },
+    {
+      "type": "vintageimprovements:curving",
+      "mode": 1,
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_turbocharger"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_turbocharger"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_turbocharger"
+        },
+        {
+          "item": "tfc:brass_mechanisms"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_turbocharger"
+        }
+      ]
+    },
+    {
+      "type":"vintageimprovements:laser_cutting",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_engine_turbocharger"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_engine_turbocharger"
+        }
+      ],
+      "energy": 800,
+      "maxChargeRate": 50
+    }
+  ]
+}

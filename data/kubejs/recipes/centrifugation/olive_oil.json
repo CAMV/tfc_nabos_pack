@@ -1,0 +1,23 @@
+{
+	"type":"vintageimprovements:centrifugation",
+	"ingredients": [ 
+		{
+			"fluid": "tfc:olive_oil_water",
+			"amount": 250
+		},
+		{
+			"item": "tfc:jute_net"
+		}
+ 	 ],
+	"results": [
+		{
+			"fluid": "tfc:olive_oil",
+			"amount": 50
+		},
+		{
+			"item": "tfc:dirty_jute_net",
+			"count": 1
+		}
+	],
+  	"processingTime": 400
+}

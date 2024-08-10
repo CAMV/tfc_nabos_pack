@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "B": {
+      "item": "tfc:metal/double_sheet/bismuth_bronze"
+    },
+    "C": {
+      "item": "create:gearbox"
+    },
+    "D": {
+      "item": "tfc:metal/double_ingot/steel"
+    },
+    "E": {
+      "item": "create:cogwheel"
+    }
+  },
+  "pattern": [
+    "A A",
+    "E E",
+    "A A",
+    "DBD",
+    "BCB",
+    "DBD"
+  ],
+  "result": {
+    "item": "createdieselgenerators:pumpjack_crank"
+  }
+}

@@ -36,4 +36,6 @@ ServerEvents.recipes(event  => {
   })
 
   event.remove({id: `${mod}:anvil/copper_bolt`})
+  event.remove({ id: `firmaciv:crafting/large_waterproof_hide` })
+
 })

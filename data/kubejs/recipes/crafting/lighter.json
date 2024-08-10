@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " B ",
+    " C ",
+    " A "
+  ],
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "B": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "C": {
+      "item": "tfc:metal/sheet/brass"
+    }
+  },
+  "result": {
+    "item": "createdieselgenerators:lighter",
+    "count": 1
+  }
+}

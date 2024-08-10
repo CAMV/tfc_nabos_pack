@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "tfc:metal/double_sheet/bismuth_bronze"
+    },
+    "B": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "tfc:metal/double_ingot/steel"
+    },
+    "D": {
+      "item": "tfc:metal/chain/steel"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "A A",
+    "DBD"
+  ],
+  "result": {
+    "item": "createdieselgenerators:pumpjack_head",
+    "count": 1
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "type": "create:compacting",
+    "ingredients": [
+        {
+        "item": "createdieselgenerators:wood_chip"
+        }
+    ],
+    "results": [
+        {
+        "item": "createdieselgenerators:chip_wood_block",
+        "count": 4
+        }
+    ]
+}

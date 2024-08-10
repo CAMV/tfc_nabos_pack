@@ -1,0 +1,15 @@
+{
+    "type": "createdieselgenerators:basin_fermenting",
+    "ingredients": [
+      {
+        "fluid": "artisanal:soap",
+        "amount": 125
+      }
+    ],
+    "processingTime": 1200,
+    "results": [
+      {
+        "item": "artisanal:soap"
+      }
+    ]
+  }

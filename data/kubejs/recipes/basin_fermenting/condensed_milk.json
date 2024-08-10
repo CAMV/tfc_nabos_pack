@@ -1,0 +1,17 @@
+{
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "minecraft:milk",
+      "amount": 2
+    }
+  ],
+  "processingTime": 120,
+  "results": [
+    {
+      "fluid": "artisanal:condensed_milk",
+      "amount": 1
+    }
+  ]
+}

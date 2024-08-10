@@ -1,0 +1,20 @@
+{
+  "type": "createdieselgenerators:basin_fermenting",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "tfc:blubber"
+    },
+    {
+      "fluid": "minecraft:water",
+      "amount": 200
+    }
+  ],
+  "processingTime": 1200,
+  "results": [
+    {
+      "fluid": "tfc:tallow",
+      "amount": 200
+    }
+  ]
+}

@@ -11,13 +11,6 @@ ServerEvents.recipes(event  => {
         event.recipes.create.deploying(`firmalife:${output}`, [input, '#tfc:chisels'])
     }
 
-    let knife_translation = (output, input, id) => {
-        event.recipes.tfc.damage_inputs_shapeless_crafting(
-            event.recipes.minecraft.crafting_shapeless(
-                output,
-                [input, '#tfc:knives'])
-            ).id(`kubejs:${id}_manual_only`)
-    }
 
     event.remove({ id: `firmalife:crafting/barrel_stave` })
 

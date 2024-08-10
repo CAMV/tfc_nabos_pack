@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "create:andesite_alloy"
+    },
+    "B": {
+      "item": "tfc:metal/sheet/brass"
+    },
+    "C": {
+      "item": "tfc:metal/double_ingot/black_steel"
+    },
+    "D": {
+      "item": "createdieselgenerators:large_diesel_engine"
+    },
+    "E": {
+      "item": "create:steam_engine"
+    }
+  },
+  "pattern": [
+    "A A",
+    "BAB",
+    " E ",
+    "BDB",
+    "BDB",
+    "CCC"
+  ],
+  "result": {
+    "item": "createdieselgenerators:huge_diesel_engine"
+  }
+}

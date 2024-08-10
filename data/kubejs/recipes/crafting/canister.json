@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "tag": "tfc:barrels"
+    },
+    "B": {
+      "item": "tfc:metal/sheet/bismuth_bronze"
+    },
+    "C": {
+      "item": "tfc:metal/sheet/steel"
+    },
+    "D": {
+      "item": "afc:rubber_bar"
+    }
+  },
+  "pattern": [
+    "DBD",
+    "CAC",
+    "DBD"
+  ],
+  "result": {
+    "item": "createdieselgenerators:canister",
+    "count": 1
+  }
+}

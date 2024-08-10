@@ -20,6 +20,8 @@ ServerEvents.recipes(event  => {
 
     event.remove({ id: 'create:crafting/appliances/linked_controller' })
     event.remove({ id: 'create:crafting/schematics/schematicannon' })
+    event.remove({ id: 'create:crafting/kinetics/steam_engine' })
+   
     event.remove({ id: 'woodencog:crafting/schematics/schematicannon' })
 
     event.shaped('create:schematicannon', [// arg 1: output
@@ -247,20 +249,6 @@ ServerEvents.recipes(event  => {
 
     event.remove({ output: 'create:portable_fluid_interface' })
     event.shapeless('create:portable_fluid_interface', ['create:copper_casing', 'create:chute']).id('kubejs:portable_fluid_interface_manual_only')
-
-    event.remove({ output: 'create:steam_engine' })
-    event.recipes.create.mechanical_crafting('create:steam_engine', [
-        '  B  ',
-        '  A  ',
-        ' DBD ',
-        ' DBD ',
-        ' CCC '
-    ], {
-        A: 'tfc:metal/sheet/gold', 
-        B: 'create:andesite_alloy', 
-        D: 'tfc:metal/sheet/copper',
-        C: 'tfc:metal/ingot/black_steel' 
-    })
 
     event.remove({ id: 'create:crafting/kinetics/steam_whistle' })
 

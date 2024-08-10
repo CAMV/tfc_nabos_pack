@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "   ",
+    "CCB",
+    "  A"
+  ],
+  "key": {
+    "A": {
+      "item": "afc:rubber_bar"
+    },
+    "B": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "tfc:metal/rod/wrought_iron"
+    }
+  },
+  "result": {
+    "item": "createdieselgenerators:kelp_handle",
+    "count": 1
+  }
+}

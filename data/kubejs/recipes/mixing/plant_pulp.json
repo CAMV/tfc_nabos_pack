@@ -1,0 +1,29 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag" : "forge:plant_fiber"
+    },
+    {
+      "tag" : "forge:plant_fiber"
+    },
+    {
+      "tag" : "forge:plant_fiber"
+    },
+    {
+      "tag" : "forge:plant_fiber"
+    },
+    {
+      "item" : "minecraft:clay_ball"
+    },
+    {
+      "fluid" : "minecraft:water",
+      "amount": 1000
+    }
+  ],
+  "results": [
+    {
+      "item": "htm:plant_pulp"
+    }
+  ]
+}

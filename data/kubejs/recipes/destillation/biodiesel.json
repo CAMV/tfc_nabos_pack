@@ -1,0 +1,22 @@
+{
+	"type": "createdieselgenerators:distillation",
+	"ingredients": [
+		{
+			"fluid": "createdieselgenerators:plant_oil",
+			"amount": 100
+		}
+	],
+	"heatRequirement": "heated",
+	"processingTime": 1600,
+	"results": [
+  
+	  {
+		"fluid": "minecraft:water",
+		"amount": 80
+	  },
+	  {
+		"fluid": "createdieselgenerators:biodisel",
+		"amount": 50
+	  }
+	]
+  }
