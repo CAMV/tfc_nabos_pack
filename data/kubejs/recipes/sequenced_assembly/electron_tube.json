@@ -1,0 +1,112 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "tfc:metal/ingot/zinc"
+  },
+  "loops": 1,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_electron_tube"
+  },
+  "results": [
+    {
+      "item": "create:electron_tube"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        },
+        {
+          "item": "create:polished_rose_quartz"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        },
+        {
+          "fluid" : "tfc:metal/tin",
+          "amount": 25
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        },
+        {
+          "item": "createaddition:copper_spool"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        },
+        {
+          "fluid" : "tfc:metal/tin",
+          "amount": 25
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        },
+        {
+          "item": "tfc:lamp_glass"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_electron_tube"
+        }
+      ]
+    }
+  ]
+}

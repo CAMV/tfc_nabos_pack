@@ -36,4 +36,13 @@ ServerEvents.recipes(event  => {
 
   event.remove({ id: `createaddition:mixing/electrum` })
   event.remove({ id: `createaddition:pressing/electrum_ingot` })
+
+  event.remove({ id: `createaddition:crafting/capacitor_1` })
+  event.remove({ id: `createaddition:crafting/capacitor_2` })
+
+  event.remove({ id: `createaddition:crafting/modular_accumulator_electrum` })
+  event.remove({ id: `createaddition:crafting/modular_accumulator_gold` })
+
+
+
 })

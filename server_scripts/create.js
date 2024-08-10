@@ -30,9 +30,7 @@ ServerEvents.recipes(event  => {
     event.remove({ input: 'create:crushed_raw_iron' })
     event.remove({ input: 'create:crushed_raw_gold' })
     event.remove({ output: 'create:tree_fertilizer' })
-    event.remove({ id: 'create:crafting/schematics/empty_schematics' })
     event.remove({ output: 'create:zinc_block' })
-    event.remove({ output: 'create:industrial_iron_block' })
     event.remove({ output: 'create:brass_block' })
 
     let stones = [
@@ -152,10 +150,12 @@ ServerEvents.recipes(event  => {
 
     event.remove({ id: 'create:crafting/materials/andesite_alloy_from_block' })
     event.remove({ id: 'create:crafting/materials/andesite_alloy_block' })
-
+    event.remove({ id: 'create:crafting/schematics/empty_schematics' })
     event.remove({ id: `create:crafting/materials/andesite_alloy` })
     event.remove({ id: `create:crafting/materials/andesite_alloy_from_zinc` })
     event.remove({ id: `create:mixing/andesite_alloy_from_zinc` })
     event.remove({ id: `create:mixing/andesite_alloy` })
+    event.remove({ id: `create:crafting/materials/electron_tube` })
+    event.remove({ id: `create:crafting/kinetics/deployer` })
 
 })

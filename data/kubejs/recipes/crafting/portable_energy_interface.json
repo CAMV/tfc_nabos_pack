@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "create:chute"
+    },
+    "B": {
+      "item": "createaddition:connector"
+    },
+    "C": {
+      "item": "create:brass_casing"
+    },
+    "D": {
+      "item": "createaddition:capacitor"
+    }
+  },
+  "pattern": [
+    " A ",
+    "DBD",
+    "CCC"
+  ],
+  "result": {
+    "item": "createaddition:portable_energy_interface",
+    "count": 1
+  }
+}

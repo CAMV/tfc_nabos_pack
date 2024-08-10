@@ -1,0 +1,25 @@
+{
+  "type": "create:mechanical_crafting",
+  "key": {
+    "A": {
+      "item": "createaddition:capacitor"
+    },
+    "B": {
+      "item": "createaddition:electrum_spool"
+    },
+    "C": {
+      "item": "create:brass_casing"
+    },
+    "D": {
+      "item": "createaddition:connector"
+    }
+  },
+  "pattern": [
+    "CCC",
+    "AAA",
+    "BDB"
+  ],
+  "result": {
+    "item": "createaddition:modular_accumulator"
+  }
+}

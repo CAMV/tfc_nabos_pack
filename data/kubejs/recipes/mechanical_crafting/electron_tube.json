@@ -1,0 +1,28 @@
+{
+  "type": "create:mechanical_crafting",
+  "key": {
+    "A": {
+      "item": "createaddition:copper_spool"
+    },
+    "B": {
+      "item": "tfc:metal/sheet/zinc"
+    },
+    "C": {
+      "item": "create:polished_rose_quartz"
+    },
+    "D": {
+      "item": "tfc:lamp_glass"
+    },
+    "E": {
+      "item": "vintageimprovements:tin_wire"
+    }
+  },
+  "pattern": [
+    "EDE",
+    "ACA",
+    "EBE"
+  ],
+  "result": {
+    "item": "create:electron_tube"
+  }
+}

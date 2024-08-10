@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "tfc:metal/rod/wrought_iron"
+    },
+    "B": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "afc:rubber_bar"
+    },
+    "D": {
+      "item": "createaddition:copper_spool"
+    }
+  },
+  "pattern": [
+    " A ",
+    "DAD",
+    "CBC"
+  ],
+  "result": {
+    "item": "createaddition:connector",
+    "count": 2
+  }
+}

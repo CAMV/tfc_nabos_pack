@@ -1,0 +1,112 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createaddition:electrum_ingot"
+  },
+  "loops": 1,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_capacitor"
+  },
+  "results": [
+    {
+      "item": "createaddition:capacitor"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        },
+        {
+          "item": "vintageimprovements:small_rose_gold_spring"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        },
+        {
+          "fluid" : "tfc:metal/tin",
+          "amount": 25
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        },
+        {
+          "item": "createaddition:copper_spool"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        },
+        {
+          "fluid" : "tfc:metal/tin",
+          "amount": 25
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        },
+        {
+          "item": "tfc:metal/rod/wrought_iron"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_capacitor"
+        }
+      ]
+    }
+  ]
+}

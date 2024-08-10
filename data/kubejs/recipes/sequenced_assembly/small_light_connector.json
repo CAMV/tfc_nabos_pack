@@ -1,0 +1,99 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "createaddition:connector"
+  },
+  "loops": 1,
+  "transitionalItem": {
+    "item": "kubejs:incomplete_small_light_connector"
+  },
+  "results": [
+    {
+      "item": "createaddition:small_light_connector"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_small_light_connector"
+        },
+        {
+          "item": "vintageimprovements:small_rose_gold_spring"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_small_light_connector"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_small_light_connector"
+        },
+        {
+          "fluid" : "tfc:metal/tin",
+          "amount": 25
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_small_light_connector"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_small_light_connector"
+        },
+        {
+          "item": "createaddition:copper_spool"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_small_light_connector"
+        }
+      ]
+    },
+    {
+      "type": "create:filling",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_small_light_connector"
+        },
+        {
+          "fluid" : "tfc:metal/tin",
+          "amount": 25
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_small_light_connector"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "kubejs:incomplete_small_light_connector"
+        },
+        {
+          "item": "tfc:lamp_glass"
+        }
+      ],
+      "results": [
+        {
+          "item": "kubejs:incomplete_small_light_connector"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:redstone"
+    },
+    "B": {
+      "item": "createaddition:copper_spool"
+    },
+    "C": {
+      "tag": "tfc:gem_powders"
+    }
+  },
+  "pattern": [
+    " A ",
+    "CBC",
+    " A "
+  ],
+  "result": {
+    "item": "createaddition:festive_spool",
+    "count": 1
+  }
+}

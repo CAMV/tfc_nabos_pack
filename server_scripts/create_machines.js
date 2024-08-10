@@ -322,16 +322,12 @@ ServerEvents.recipes(event  => {
         C: 'create:andesite_casing',
     })
 
-    event.remove({ output: 'create:portable_storage_interface' })
-    event.shapeless('create:portable_storage_interface', ['create:andesite_casing', 'create:chute']).id('kubejs:portable_storage_interface_manual_only')
 
     event.remove({ id: 'create:crafting/logistics/redstone_contact' })
 
     event.remove({ output: 'create:sail_frame' })
     event.remove({ output: 'create:white_sail' })
 
-    event.remove({ output: 'create:sequenced_gearshift' })
-    event.shapeless('create:sequenced_gearshift', ['create:brass_casing', 'create:cogwheel', 'create:electron_tube']).id('kubejs:sequenced_gearshift_manual_only')
 
   event.remove({ output: 'create:track' })
   let inter = 'create:incomplete_track'
@@ -359,9 +355,6 @@ ServerEvents.recipes(event  => {
 
     event.remove({ output: 'create:track_station' })
     event.shapeless('2x create:track_station', ['create:railway_casing', 'minecraft:compass']).id('kubejs:track_station_manual_only')
-
-    event.remove({ output: 'create:track_signal' })
-    event.shapeless('4x create:track_signal', ['create:railway_casing', 'create:electron_tube']).id('kubejs:track_signal_manual_only')
 
     event.remove({ output: 'create:track_observer' })
     event.shapeless('2x create:track_observer', ['create:railway_casing', '#minecraft:wooden_pressure_plates']).id('kubejs:track_observer_manual_only')
@@ -399,22 +392,6 @@ ServerEvents.recipes(event  => {
         D: 'firmalife:reinforced_glass', 
       }
     )
-
-    event.remove({ output: 'create:electron_tube' })
-    event.shaped('2x create:electron_tube', [
-        ' A ', 
-        ' B ', 
-        'CDC'  
-      ], {
-        A: 'tfc:lamp_glass', 
-        B: 'create:polished_rose_quartz', 
-        C: 'createaddition:electrum_sheet', 
-        D: '#forge:gems', 
-      }
-    )
-
-    event.remove({ output: 'create:nixie_tube' })
-    event.shapeless('4x create:nixie_tube', ['create:electron_tube', 'create:electron_tube']).id('kubejs:nixie_tube_manual_only')
 
     event.remove({ output: 'create:rose_quartz_lamp' })
 

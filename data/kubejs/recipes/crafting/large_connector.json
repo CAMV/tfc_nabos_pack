@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "createaddition:connector"
+    },
+    "C": {
+      "tag": "minecraft:terracotta"
+    },
+    "D": {
+      "item": "createaddition:electrum_spool"
+    }
+  },
+  "pattern": [
+    "DBD",
+    "DBD",
+    "CCC"
+  ],
+  "result": {
+    "item": "createaddition:large_connector",
+    "count": 4
+  }
+}

@@ -33,7 +33,7 @@
       "type": "create:filling",
       "ingredients": [
         {
-          "item": "firmalife:reinforced_glass"
+          "item": "kubejs:incomplete_mirror"
         },
         {
           "fluid" : "tfc:metal/silver",
@@ -42,7 +42,7 @@
       ],
       "results": [
         {
-          "item": "firmalife:reinforced_glass"
+          "item": "kubejs:incomplete_mirror"
         }
       ]
     },
