@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "create:copper_casing"
+    },
+    "B": {
+      "item": "tfc:metal/bars/wrought_iron"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "AAA"
+  ],
+  "result": {
+    "item": "create:item_drain"
+  }
+}

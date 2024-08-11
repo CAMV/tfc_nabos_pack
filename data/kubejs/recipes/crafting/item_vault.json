@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "tag": "tfc:chests/wooden"
+      "tag": "forge:chests/wooden"
     },
     "B": {
       "item": "tfc:metal/sheet/wrought_iron"

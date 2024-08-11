@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "create:andesite_alloy"
+    },
+    "C": {
+      "item": "minecraft:redstone"
+    },
+    "D": {
+      "item": "tfc:glue"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "BCB"
+  ],
+  "result": {
+    "item": "create:sticker"
+  }
+}

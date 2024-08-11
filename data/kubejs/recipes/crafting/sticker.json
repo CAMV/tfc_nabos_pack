@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "tfc:metal/bars/steel"
+    },
+    "B": {
+      "item": "create:andesite_casing"
+    },
+    "C": {
+      "item": "tfc:metal/ingot/steel"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "C C",
+    "AAA"
+  ],
+  "result": {
+    "item": "create:elevator_pulley"
+  }
+}

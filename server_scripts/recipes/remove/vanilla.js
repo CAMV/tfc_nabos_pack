@@ -11,7 +11,8 @@ ServerEvents.recipes(event  => {
     event.remove({ id: `minecraft:smithing_table` })
     event.remove({ input: 'minecraft:wooden_sword' })
     event.remove({ output: 'minecraft:copper_ingot' })
-
+    event.remove({ output: 'minecraft:piston' })
+    event.remove({ output: 'minecraft:sticky_piston' })
 
     let states = [
         'oxidized_',
@@ -40,9 +41,6 @@ ServerEvents.recipes(event  => {
     event.remove({ id: `minecraft:minecart` })
     event.remove({ id: `minecraft:hopper_minecart` })
     event.remove({ id: `minecraft:furnace_minecart` })
-
-    event.recipes.minecraft.crafting_shapeless(`minecraft:hopper_minecart`, ['minecraft:minecart', 'minecraft:hopper']).id(`kubejs:hopper_minecart_manual_only`)
-    event.recipes.create.deploying(`minecraft:hopper_minecart`, ['minecraft:minecart', 'minecraft:hopper'])
 
     let woods = [
         'oak',
@@ -149,9 +147,6 @@ ServerEvents.recipes(event  => {
 
     event.remove({id: `minecraft:gold_block`})
     event.remove({id: `minecraft:mossy_stone_brick`})
-
     event.remove({id: `minecraft:crafting_table`})
-
-
 
 })

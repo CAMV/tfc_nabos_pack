@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "create:copper_casing"
+    },
+    "B": {
+      "item": "afc:rubber_bar"
+    },
+    "C": {
+      "item": "tfc:metal/sheet/copper"
+    }
+  },
+  "pattern": [
+    " A ",
+    " B ",
+    " C "
+  ],
+  "result": {
+    "item": "create:hose_pulley"
+  }
+}

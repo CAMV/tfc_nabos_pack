@@ -169,42 +169,9 @@ ServerEvents.recipes(event  => {
       }
     )
 
-    event.remove({ output: 'create:fluid_valve' })
-    event.shaped('create:fluid_valve', [
-        ' A ', 
-        ' B ', 
-        '   '  
-      ], {
-        A: 'tfc:metal/sheet/steel', 
-        B: 'create:fluid_pipe', 
-      }
-    )
-
-    event.remove({ id: 'create:crafting/kinetics/fluid_tank' })
-
-    event.remove({ id: 'create:crafting/kinetics/hose_pulley' })
-
-    event.remove({ id: 'create:crafting/kinetics/item_drain' })
-
-    event.remove({ output: 'create:spout' })
-    event.shaped('create:spout', [
-        ' A ', 
-        ' B ', 
-        ' C '  
-      ], {
-        A: 'create:copper_casing', 
-        B: 'create:fluid_tank', 
-        C: '#forge:leather', 
-      }
-    )
-
-    event.remove({ output: 'create:portable_fluid_interface' })
-    event.shapeless('create:portable_fluid_interface', ['create:copper_casing', 'create:chute']).id('kubejs:portable_fluid_interface_manual_only')
-
     event.remove({ id: 'create:crafting/kinetics/steam_whistle' })
 
-    event.remove({ output: 'minecraft:piston' })
-    event.remove({ output: 'minecraft:sticky_piston' })
+
     event.remove({ id: 'tfc:crafting/unsticky_piston' })
 
     event.remove({ output: 'create:mechanical_piston' })
@@ -234,19 +201,6 @@ ServerEvents.recipes(event  => {
       }
     )
 
-    event.remove({ output: 'create:elevator_pulley' })
-    event.shaped('create:elevator_pulley', [
-        'AAA', 
-        'DBD', 
-        'CCC'  
-      ], {
-        A: 'create:andesite_casing', 
-        B: 'tfc:metal/chain/steel', 
-        C: 'tfc:metal/sheet/steel', 
-        D: '#forge:leather', 
-      }
-    )
-
     event.remove({ id: 'create:crafting/kinetics/sticker' })
 
     event.remove({ output: 'create:mechanical_drill' })
@@ -262,10 +216,7 @@ ServerEvents.recipes(event  => {
     })
 
 
-    event.remove({ id: 'create:crafting/logistics/redstone_contact' })
 
-    event.remove({ output: 'create:sail_frame' })
-    event.remove({ output: 'create:white_sail' })
 
 
   event.remove({ output: 'create:track' })
@@ -297,17 +248,6 @@ ServerEvents.recipes(event  => {
 
     event.remove({ output: 'create:track_observer' })
     event.shapeless('2x create:track_observer', ['create:railway_casing', '#minecraft:wooden_pressure_plates']).id('kubejs:track_observer_manual_only')
-
-    event.remove({ output: 'create:item_vault' })
-    event.shaped('create:item_vault', [
-        ' A ', 
-        'ABA', 
-        ' A '  
-      ], {
-        A: 'tfc:metal/chain/steel', 
-        B: '#tfc:barrels', 
-      }
-    )
 
     event.remove({ id: 'create:crafting/logistics/andesite_funnel' })
 

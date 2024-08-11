@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "create:copper_casing"
+    },
+    "C": {
+      "item": "create:fluid_tank"
+    },
+    "D": {
+      "item": "create:fluid_pipe"
+    },
+    "B": {
+      "item": "afc:rubber_bar"
+    }
+  },
+  "pattern": [
+    "ADA",
+    " C ",
+    " B "
+
+  ],
+  "result": {
+    "item": "create:spout"
+  }
+}

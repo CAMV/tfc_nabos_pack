@@ -1,5 +1,5 @@
 {
-  "type": "create:mechanical_crafting",
+  "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
       "item": "createaddition:copper_spool"
@@ -20,7 +20,7 @@
   "pattern": [
     "EDE",
     "ACA",
-    "EBE"
+    "BBB"
   ],
   "result": {
     "item": "create:electron_tube"

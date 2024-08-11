@@ -18,4 +18,11 @@ ServerEvents.recipes(event  => {
   event.remove({ id: 'woodencog:crafting/schematics/schematicannon' })
   event.remove({ id: 'woodencog:crafting/kinetics/belt_connector' })
 
+  event.remove({ id: 'woodencog:crafting/kinetics/hose_pulley' })
+  event.remove({ id: 'woodencog:crafting/kinetics/item_drain' })
+  event.remove({ id: 'woodencog:crafting/kinetics/spout' })
+  event.remove({ id: 'woodencog:crafting/kinetics/elevator_pulley' })
+  event.remove({ id: 'woodencog:crafting/kinetics/sticker' })
+  event.remove({ id: 'woodencog:crafting/kinetics/item_vault' })
+
 })
