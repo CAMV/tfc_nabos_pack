@@ -2692,7 +2692,7 @@
   "fluid.create.honey": "Honey",
   "fluid.create.potion": "Potion",
   "fluid.create.tea": "Builder's Tea",
-  "item.create.andesite_alloy": "Zinc Alloy Alloy",
+  "item.create.andesite_alloy": "Zinc Alloy",
   "item.create.attribute_filter": "Attribute Filter",
   "item.create.attribute_filter.tooltip.behaviour1": "Opens the _configuration interface_.",
   "item.create.attribute_filter.tooltip.condition1": "When R-Clicked",

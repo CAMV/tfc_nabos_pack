@@ -19,6 +19,9 @@ JEIEvents.hideItems( event => {
   event.hide('createaddition:biomass_pellet')
   event.hide('createaddition:biomass_pellet_block')
 
+  event.hide('createaddition:mixing/netherrack')
+
+
 })
 
 JEIEvents.hideFluids ( event => {

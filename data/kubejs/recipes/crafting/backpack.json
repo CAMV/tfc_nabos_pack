@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "tfc_knapsacks:sack"
+    },
+    "B": {
+      "item": "tfc_knapsacks:leather_strip"
+    },
+    "C": {
+      "tag": "tfc:high_quality_cloth"
+    },
+    "D": {
+      "item": "tfc:metal/rod/wrought_iron"
+    }
+  },
+  "pattern": [
+    "BCB",
+    "DAD",
+    "BAB"
+  ],
+  "result": {
+    "item": "tfc_knapsacks:backpack",
+    "count": 1
+  }
+}

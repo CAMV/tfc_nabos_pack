@@ -20,6 +20,8 @@ ServerEvents.recipes(event  => {
     event.remove({ id: `${modID}:curving/iron_sheet` })
 
     event.remove({ id: `${modID}:craft/helve_hammer_slot_cover` })
+    event.remove({ id: `${modID}:centrifugation/mud` })
+    event.remove({ id: `${modID}:centrifugation/honey_comb` })
 
     event.remove({ mod: 'vintageimprovements', output: `${modID}:vanadium_ingot` })
     event.remove({ mod: 'vintageimprovements', output: `${modID}:vanadium_block` })

@@ -145,6 +145,81 @@ JEIEvents.hideItems( event => {
 
     event.hide(`minecraft:shulker_box`)
     event.hide(`minecraft:shulker_shell`)
+    event.hide(`minecraft:stone_pressure_plate`)
+    event.hide(`minecraft:stone_button`)
+    event.hide(`minecraft:stone_bricks`)
+    event.hide(`minecraft:chiseled_stone_bricks`)
+    event.hide(`minecraft:cracked_stone_bricks`)
+    event.hide(`minecraft:mossy_stone_bricks`)
+    event.hide(`minecraft:cracked_deepslate_brick`)
+    event.hide(`minecraft:cracked_deepslate_tiles`)
+    event.hide(`minecraft:deepslate_brick_stairs`)
+    event.hide(`minecraft:deepslate_brick_slab`)
+    event.hide(`minecraft:deepslate_brick_wall`)
+    event.hide(`minecraft:cracked_deepslate_tile_stairs`)
+    event.hide(`minecraft:deepslate_tile_slab`)
+    event.hide(`minecraft:deepslate_tile_wall`)
+    event.hide(`minecraft:reinforced_deepslate`)
+
+    event.hide(`minecraft:mud_brick_stairs`)
+    event.hide(`minecraft:mud_brick_slab`)
+    event.hide(`minecraft:mud_brick_wall`)
+
+    event.hide(`minecraft:chiseled_sandstone`)
+    event.hide(`minecraft:chiseled_red_sandstone`)
+    event.hide(`minecraft:sea_lantern`)
+    event.hide(`minecraft:prismarine_bricks`)
+    event.hide(`minecraft:purpur_pillar`)
+
+    event.hide(`minecraft:iron_bars`)
+    event.hide(`minecraft:coal_block`)
+    event.hide(`minecraft:chain`)
+    event.hide(`minecraft:gold_block`)
+    event.hide(`minecraft:emerald_block`)
+    event.hide(`minecraft:lapis_block`)
+    event.hide(`minecraft:diamond_block`)
+    event.hide(`minecraft:waxed_copper_block`)
+    event.hide(`minecraft:netherite_block`)
+
+    event.hide(`minecraft:grass_block`)
+    event.hide(`minecraft:podzol`)
+    event.hide(`minecraft:mycelium`)
+    event.hide(`minecraft:dirt_path`)
+    event.hide(`minecraft:dirt`)
+    event.hide(`minecraft:coarse_dirt`)
+    event.hide(`minecraft:rooted_dirt`)
+    event.hide(`minecraft:farmland_dirt`)
+    event.hide(`minecraft:mud`)
+    event.hide(`minecraft:gravel`)
+    event.hide(`minecraft:sand`)
+    event.hide(`minecraft:red_sand`)
+    event.hide(`minecraft:tuff`)
+    event.hide(`minecraft:calcite`)
+
+    let ores = [
+        "iron",
+        "copper",
+        "gold",
+        "diamond",
+        "redstone",
+        "coal",
+        "lapis",
+        "emerald"
+    ]
+
+    ores.forEach((o) => {
+        event.hide(`minecraft:${o}_ore`)
+        event.hide(`minecraft:deepslate_${o}_ore`)
+    })
+
+    event.hide(`minecraft:raw_iron_block`)
+    event.hide(`minecraft:raw_copper_block`)
+    event.hide(`minecraft:raw_gold_block`)
+
+    event.hide(`minecraft:composter`)
+    event.hide(`minecraft:chest`)
+    event.hide(`minecraft:barrel`)
+    event.hide(`minecraft:honey_block`)
 
 
 })

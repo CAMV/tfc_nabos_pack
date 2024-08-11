@@ -176,6 +176,27 @@ ServerEvents.recipes(event  => {
     event.remove({ id: 'create:crafting/kinetics/elevator_pulley' })
     event.remove({ id: 'create:crafting/kinetics/item_vault' })
 
+    event.remove({ id: 'create:filling/grass_block' })
+    event.remove({ id: 'create:pressing/path' })
+    event.remove({ id: 'create:mixing/mud' })
+    event.remove({ id: 'create:milling/cobblestone' })
+    event.remove({ id: 'create:milling/sandstone' })
+    event.remove({ id: 'create:milling/granite' })
+    event.remove({ id: 'create:milling/terracotta' })
+    event.remove({ id: 'create:crushing/gravel' })
+    event.remove({ id: 'create:splashing/red_sand' })
+
+    event.remove({ id: 'create:crushing/golden_horse_armor' })
+    event.remove({ id: 'create:crushing/iron_horse_armor' })
+    event.remove({ id: 'create:crushing/diamond_horse_armor' })
+    event.remove({ id: 'create:crushing/diorite' })
+    event.remove({ id: 'create:crushing/prismarine_crystals' })
+    event.remove({ id: 'create:milling/sugar_cane' })
+
+    event.remove({ id: 'create:compacting/honey' })
+    event.remove({ id: 'create:mixing/honey' })
+    event.remove({ id: 'create:mixing/chocolate' })
+
     event.remove({ output: 'create:sail_frame' })
     event.remove({ output: 'create:white_sail' })
 })

@@ -151,4 +151,7 @@ JEIEvents.hideItems(event => {
 
   event.hide('create:framed_glass_trapdoor')
 
+  event.hide('create:honey')
+  event.hide('create:chocolate')
+
 })

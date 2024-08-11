@@ -148,5 +148,49 @@ ServerEvents.recipes(event  => {
     event.remove({id: `minecraft:gold_block`})
     event.remove({id: `minecraft:mossy_stone_brick`})
     event.remove({id: `minecraft:crafting_table`})
+    event.remove({id: `minecraft:stone_presure_plate`})
+    event.remove({id: `minecraft:stone_button`})
+    event.remove({id: `minecraft:stone_bricks`})
+    event.remove({id: `minecraft:chiseled_stone_bricks`})
+    event.remove({id: `minecraft:mossy_stone_bricks_from_moss_block`})
+    event.remove({id: `minecraft:mossy_stone_bricks_from_moss_vine`})
+    event.remove({id: `minecraft:deepslate_brick_stairs`})
+    event.remove({id: `minecraft:deepslate_brick_slab`})
+    event.remove({id: `minecraft:deepslate_brick_wall`})
+    event.remove({id: `minecraft:cracked_deepslate_tile_stairs`})
+    event.remove({id: `minecraft:deepslate_tile_slab`})
+    event.remove({id: `minecraft:deepslate_tile_wall`})
+
+    event.remove({id: `minecraft:mud_brick_stairs`})
+    event.remove({id: `minecraft:mud_brick_slab`})
+    event.remove({id: `minecraft:mud_brick_wall`})
+
+    event.remove({id: `minecraft:chiseled_sandstone`})
+    event.remove({id: `minecraft:chiseled_red_sandstone`})
+
+    event.remove({id: `minecraft:sea_lantern`})
+    event.remove({id: `minecraft:prismarine_bricks`})
+    event.remove({id: `minecraft:purpur_pillar`})
+
+    event.remove({id: `minecraft:iron_bars`})
+    event.remove({id: `minecraft:coal_block`})
+    event.remove({id: `minecraft:chain`})
+    event.remove({id: `minecraft:emerald_block`})
+    event.remove({id: `minecraft:lapis_block`})
+    event.remove({id: `minecraft:diamond_block`})
+    event.remove({id: `minecraft:waxed_copper_block_from_honeycomb`})
+    event.remove({id: `minecraft:netherite_ingot_from_netherite_block`})
+
+    event.remove({id: `minecraft:sugar_from_honey_bottle`})
+    event.remove({id: `minecraft:paper`})
+
+    event.remove({mod:'minecraft', output: `minecraft:gold_ingot`})
+
+    event.remove({id: `minecraft:raw_iron_block`})
+    event.remove({id: `minecraft:raw_copper_block`})
+    event.remove({id: `minecraft:raw_gold_block`})
+
+    event.remove({id: `minecraft:honey_block`})
+
 
 })
