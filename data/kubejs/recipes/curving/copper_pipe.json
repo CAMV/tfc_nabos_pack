@@ -1,0 +1,15 @@
+{
+	"type": "vintageimprovements:curving",
+	"mode": 1,
+	"ingredients": [
+		{
+		  "item": "tfc:metal/sheet/copper"
+		}
+	],
+	"results": [
+		{
+		  "item": "firmalife:copper_pipe",
+		  "count": 8
+		}
+	]
+}

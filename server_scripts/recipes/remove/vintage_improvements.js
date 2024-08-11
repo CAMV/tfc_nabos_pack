@@ -27,5 +27,8 @@ ServerEvents.recipes(event  => {
     event.remove({ mod: 'vintageimprovements', output: `${modID}:vanadium_block` })
     event.remove({ mod: 'vintageimprovements', output: `${modID}:vanadium_nugget` })
 
+    event.remove({ id: `${modID}:mechanical_crafting/lathe` })
+    event.remove({ id: `${modID}:turning/concave_curving_head` })
+    event.remove({ id: `${modID}:turning/convex_curving_head` })
 
 })

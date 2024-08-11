@@ -3,14 +3,15 @@
   "heatRequirement": "heated",
   "ingredients": [
     {
-      "fluid": "afc:birch_sap_concentrate",
-      "amount": 500
+      "item": "tfc:powder/lime"
+    },
+    {
+      "item": "rnr:crushed_base_course"
     }
   ],
   "results": [
     {
-      "fluid": "afc:birch_syrup",
-      "amount": 150
+      "item": "rnr:concrete_powder"
     }
   ]
 }

@@ -192,10 +192,12 @@ ServerEvents.recipes(event  => {
     event.remove({ id: 'create:crushing/diorite' })
     event.remove({ id: 'create:crushing/prismarine_crystals' })
     event.remove({ id: 'create:milling/sugar_cane' })
+    event.remove({ id: 'create:sequenced_assembly/precision_mechanism' })
 
     event.remove({ id: 'create:compacting/honey' })
     event.remove({ id: 'create:mixing/honey' })
     event.remove({ id: 'create:mixing/chocolate' })
+    event.remove({ id: 'create:pressing/sugar_cane' })
 
     event.remove({ output: 'create:sail_frame' })
     event.remove({ output: 'create:white_sail' })

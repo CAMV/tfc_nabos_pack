@@ -1,0 +1,15 @@
+{
+	"type": "vintageimprovements:curving",
+	"mode": 1,
+	"ingredients": [
+		{
+		  "item": "tfc:metal/sheet/steel"
+		}
+	],
+	"results": [
+		{
+		  "item": "tfc:steel_pipe",
+		  "count": 8
+		}
+	]
+}

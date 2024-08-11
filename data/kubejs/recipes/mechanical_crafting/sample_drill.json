@@ -2,9 +2,6 @@
   "type": "create:mechanical_crafting",
   "acceptMirrored": false,
   "key": {
-    "A": {
-      "item": "tfc:metal/sheet/brass"
-    },
     "B": {
       "item": "create:electron_tube"
     },

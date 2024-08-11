@@ -6,7 +6,7 @@
       "tag": "create:seats"
     },
     "C": {
-      "tag": "tfc:lumber"
+      "item": "firmalife:treated_lumber"
     },
     "D": {
       "item": "tfc:metal/sheet/steel"

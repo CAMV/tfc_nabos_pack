@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "tfc:silica_sand"
+    },
+    {
+      "tag": "tfc:silica_sand"
+    },
+    {
+      "tag": "tfc:silica_sand"
+    },
+    {
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "tfc:powder/lime"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:silica_glass_batch",
+      "count": 4
+    }
+  ]
+}

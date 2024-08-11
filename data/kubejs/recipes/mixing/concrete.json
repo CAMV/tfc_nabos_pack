@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "fluid": "minecraft:water",
+      "amount": 100
+    },
+    {
+      "item": "rnr:concrete_powder"
+    }
+  ],
+  "results": [
+    {
+      "fluid": "rnr:concrete",
+      "amount": 100
+    }
+  ]
+}

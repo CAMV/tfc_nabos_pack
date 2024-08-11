@@ -191,6 +191,8 @@ ServerEvents.recipes(event  => {
     event.remove({id: `minecraft:raw_gold_block`})
 
     event.remove({id: `minecraft:honey_block`})
-
+    event.remove({id: `minecraft:iron_ingot_from_iron_block`})
+    event.remove({id: `minecraft:iron_block`})
+    event.remove({id: `minecraft:sugar_from_sugar_cane`})
 
 })

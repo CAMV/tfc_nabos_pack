@@ -1,0 +1,15 @@
+{
+	"type":"vintageimprovements:turning",
+	"ingredients": [
+		{
+			"item": "tfc:metal/double_sheet/steel"
+		}
+	],
+	"results": [
+		{
+			"item": "vintageimprovements:concave_curving_head",
+			"count": 1
+		}
+	],
+	"processingTime": 400
+}

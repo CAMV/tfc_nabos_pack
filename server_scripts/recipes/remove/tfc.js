@@ -8,5 +8,16 @@ ServerEvents.recipes(event  => {
 
   event.remove({id: 'tfc_knapsacks:backpack_recipe_2'})
 
+  event.remove({id: 'tfc_knapsacks:backpack_recipe_2'})
+  event.remove({id: 'tfc:crafting/gunpowder_graphite'})
+  event.remove({id: 'tfc:crafting/gunpowder'})
+
+  event.remove({id: 'tfc:crafting/volcanic_glass_batch'})
+  event.remove({id: 'tfc:crafting/silica_glass_batch'})
+  event.remove({id: 'tfc:crafting/olivine_glass_batch'})
+  event.remove({id: 'tfc:crafting/hematitic_glass_batch'})
+  event.remove({id: 'tfc:crafting/soot'})
+  event.remove({id: 'tfc:crafting/rotten_compost'})
+  event.remove({id: 'firmalife:crafting/seed_ball'})
 
 })

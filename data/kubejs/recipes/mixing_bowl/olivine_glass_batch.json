@@ -1,0 +1,24 @@
+{
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "tag": "tfc:olivine_sand"
+    },
+    {
+      "tag": "tfc:olivine_sand"
+    },
+    {
+      "tag": "tfc:olivine_sand"
+    },
+    {
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "tfc:powder/lime"
+    }
+  ],
+  "output_item": {
+    "item": "tfc:olivine_glass_batch",
+    "count": 4
+  }
+}

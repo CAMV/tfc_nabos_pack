@@ -1,0 +1,21 @@
+{
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "tfc:powder/sulfur"
+    },
+    {
+      "item": "tfc:powder/charcoal"
+    }
+  ],
+  "output_item": {
+    "item": "minecraft:gunpowder",
+    "count": 4
+  }
+}

@@ -103,6 +103,17 @@ ServerEvents.recipes(event  => {
           ],
           item: item_out,
           count: 1
+        },
+        {
+          type: "drop_item",
+          contextual: [
+            {
+              type : "chance",
+              chance : 0.1
+            }
+          ],
+          item: "tfc_lumberjack:sawdust",
+          count: 1
         }
       ]
     })
@@ -311,6 +322,28 @@ ServerEvents.recipes(event  => {
             ],
             item: `${w.mod}:wood/lumber/${w.name}`,
             count: 2
+        },
+        {
+          type: "drop_item",
+          contextual: [
+            {
+              type : "chance",
+              chance : 0.1
+            }
+          ],
+          item: "tfc_lumberjack:sawdust",
+          count: 2
+        },
+        {
+          type: "drop_item",
+          contextual: [
+            {
+              type : "chance",
+              chance : 0.05
+            }
+          ],
+          item: "tfc_lumberjack:sawdust",
+          count: 1
         }
       ],
     })

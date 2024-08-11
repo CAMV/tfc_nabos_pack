@@ -1,0 +1,16 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tfc:compost"
+    },
+    {
+      "item": "tfc:soot"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:rotten_compost"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "type": "firmalife:mixing_bowl",
+  "ingredients": [
+    {
+      "item": "tfc:compost"
+    },
+    {
+      "item": "tfc:soot"
+    }
+  ],
+  "output_item": {
+    "item": "tfc:rotten_compost"
+  }
+}

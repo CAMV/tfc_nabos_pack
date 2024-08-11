@@ -5,7 +5,7 @@
       "item": "create:water_wheel"
     },
     "C": {
-      "tag": "firmaciv:hard_wood"
+      "item": "firmalife:treated_lumber"
     }
   },
   "pattern": [

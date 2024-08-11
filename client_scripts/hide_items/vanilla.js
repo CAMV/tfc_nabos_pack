@@ -220,6 +220,9 @@ JEIEvents.hideItems( event => {
     event.hide(`minecraft:chest`)
     event.hide(`minecraft:barrel`)
     event.hide(`minecraft:honey_block`)
+    event.hide(`minecraft:iron_block`)
+    event.hide(`minecraft:sugar_cane`)
+    event.hide(`minecraft:sugar`)
 
 
 })

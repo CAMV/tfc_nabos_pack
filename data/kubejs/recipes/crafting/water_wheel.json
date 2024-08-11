@@ -8,13 +8,13 @@
       "tag": "tfc:water_wheels"
     },
     "C": {
-      "tag": "firmaciv:hard_wood"
+      "item": "firmalife:treated_lumber"
     }
   },
   "pattern": [
-    " A ",
+    "CAC",
     "CBC",
-    " A "
+    "CAC"
   ],
   "result": {
     "item": "create:water_wheel"

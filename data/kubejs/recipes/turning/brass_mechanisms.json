@@ -1,0 +1,15 @@
+{
+	"type":"vintageimprovements:turning",
+	"ingredients": [
+		{
+			"item": "tfc:metal/ingot/brass"
+		}
+	],
+	"results": [
+		{
+			"item": "tfc:brass_mechanisms",
+			"count": 2
+		}
+	],
+	"processingTime": 200
+}

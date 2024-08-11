@@ -35,7 +35,7 @@ ServerEvents.recipes(event  => {
       ], {
         A: 'tfc:metal/sheet/wrought_iron', 
         B: 'minecraft:flint_and_steel',
-        C: `#minecraft:planks`, 
+        C: `firmalife:treated_lumber`, 
         D: 'tfc:metal/ingot/wrought_iron', 
 
       })
@@ -48,7 +48,7 @@ ServerEvents.recipes(event  => {
       ], {
         A: 'tfc:metal/sheet/wrought_iron', 
         B: 'minecraft:flint_and_steel',
-        C: `#minecraft:planks`,
+        C: `firmalife:treated_lumber`,
         D: 'tfc:metal/ingot/wrought_iron', 
 
       })

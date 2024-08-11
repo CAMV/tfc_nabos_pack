@@ -1,0 +1,38 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "tfc:powder/charcoal"
+    },
+    {
+      "item": "tfc:powder/charcoal"
+    },
+    {
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "tfc:powder/saltpeter"
+    },    
+    {
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "tfc:powder/sulfur"
+    },    
+    {
+      "item": "tfc:powder/sulfur"
+    },
+    {
+      "item": "tfc:powder/graphite"
+    }
+  ],
+  "results": [
+    {
+      "item": "minecraft:gunpowder",
+      "count" : 12
+    }
+  ]
+}

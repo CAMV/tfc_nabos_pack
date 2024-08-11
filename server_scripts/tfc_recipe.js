@@ -88,7 +88,4 @@ ServerEvents.recipes(event  => {
           ['#tfc:firepit_sticks','#tfc:knives'])
       ).id(`kubejs:stick_from_twigs_manual_only`)
 
-      event.recipes.create.milling('tfc:charcoal', 'tfc:powder/charcoal').id('kubejs:milling/powder/charcoal')
-
-
 })

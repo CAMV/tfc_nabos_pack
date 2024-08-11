@@ -95,7 +95,8 @@
   ],
   "results": [
     {
-      "item": "artisanal:metal/tinplate"
+      "item": "artisanal:metal/tinplate",
+      "count": 4
     }
   ],
   "loops": 1

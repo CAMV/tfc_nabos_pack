@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "tfc:seeds"
+    },
+    {
+      "tag": "tfc:seeds"
+    },
+    {
+      "tag": "tfc:seeds"
+    },
+    {
+      "tag": "tfc:seeds"
+    },
+    {
+      "item": "tfc:compost"
+    }
+  ],
+  "results": [
+    {
+      "item": "firmalife:seed_ball"
+    }
+  ]
+}

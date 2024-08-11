@@ -1,12 +1,10 @@
 {
-  "type":"createaddition:rolling",
-  "input":
-    {
-      "item": "firmalife:metal/rod/stainless_steel"
-    },  
-  "result":
-    {
-      "item": "kubejs:stainless_steel_wire",
-		"count": 2
-    }
+  "type": "createaddition:rolling",
+  "input": {
+    "item": "firmalife:metal/rod/stainless_steel"
+  },
+  "result": {
+    "item": "kubejs:stainless_steel_wire",
+    "count": 2
+  }
 }

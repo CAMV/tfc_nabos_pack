@@ -1,0 +1,26 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "tfc:hematitic_sand"
+    },
+    {
+      "tag": "tfc:hematitic_sand"
+    },
+    {
+      "tag": "tfc:hematitic_sand"
+    },
+    {
+      "item": "tfc:powder/saltpeter"
+    },
+    {
+      "item": "tfc:powder/lime"
+    }
+  ],
+  "results": [
+    {
+      "item": "tfc:hematitic_glass_batch",
+      "count": 4
+    }
+  ]
+}

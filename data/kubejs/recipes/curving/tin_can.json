@@ -1,0 +1,14 @@
+{
+	"type": "vintageimprovements:curving",
+	"mode": 1,
+	"ingredients": [
+		{
+		  "item": "artisanal:metal/tinplate"
+		}
+	],
+	"results": [
+		{
+		  "item": "artisanal:metal/tin_can"
+		}
+	]
+}

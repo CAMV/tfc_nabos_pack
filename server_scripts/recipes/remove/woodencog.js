@@ -25,5 +25,6 @@ ServerEvents.recipes(event  => {
   event.remove({ id: 'woodencog:crafting/kinetics/elevator_pulley' })
   event.remove({ id: 'woodencog:crafting/kinetics/sticker' })
   event.remove({ id: 'woodencog:crafting/kinetics/item_vault' })
+  event.remove({ id: 'woodencog:crafting/sequenced_assembly/precision_mechanism' })
 
 })
